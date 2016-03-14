@@ -1,0 +1,219 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Guayusa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CaffeinatedSteepedDrink"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SteepedDrink"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBrewingTemperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#YerbaMate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SenchaGreenTea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RooibosTea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GreenTea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DecaffeinatedSteepedDrink"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BlackTea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MintTea"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#brews"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tisane"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCaffeine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pu-ErhTea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BrewingTemperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OolongTea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WhiteTea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LowBrewingTemperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MediumBrewingTemperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HighBrewingTemperature"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#BlackTea"/>
+        <Class IRI="#Tea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BrewingTemperature"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#brews"/>
+            <Class IRI="#SteepedDrink"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CaffeinatedSteepedDrink"/>
+        <Class IRI="#SteepedDrink"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DecaffeinatedSteepedDrink"/>
+        <Class IRI="#SteepedDrink"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GreenTea"/>
+        <Class IRI="#Tea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GreenTea"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasBrewingTemperature"/>
+            <Class IRI="#LowBrewingTemperature"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Guayusa"/>
+        <Class IRI="#CaffeinatedSteepedDrink"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Guayusa"/>
+        <Class IRI="#Tisane"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighBrewingTemperature"/>
+        <Class IRI="#BrewingTemperature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LowBrewingTemperature"/>
+        <Class IRI="#BrewingTemperature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MediumBrewingTemperature"/>
+        <Class IRI="#BrewingTemperature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MintTea"/>
+        <Class IRI="#DecaffeinatedSteepedDrink"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MintTea"/>
+        <Class IRI="#Tisane"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OolongTea"/>
+        <Class IRI="#Tea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pu-ErhTea"/>
+        <Class IRI="#Tea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RooibosTea"/>
+        <Class IRI="#DecaffeinatedSteepedDrink"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RooibosTea"/>
+        <Class IRI="#Tisane"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SenchaGreenTea"/>
+        <Class IRI="#GreenTea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SteepedDrink"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasBrewingTemperature"/>
+            <Class IRI="#BrewingTemperature"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tea"/>
+        <Class IRI="#CaffeinatedSteepedDrink"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tisane"/>
+        <Class IRI="#SteepedDrink"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WhiteTea"/>
+        <Class IRI="#Tea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#YerbaMate"/>
+        <Class IRI="#CaffeinatedSteepedDrink"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#YerbaMate"/>
+        <Class IRI="#Tisane"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#CaffeinatedSteepedDrink"/>
+        <Class IRI="#DecaffeinatedSteepedDrink"/>
+    </DisjointClasses>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#brews"/>
+        <ObjectProperty IRI="#hasBrewingTemperature"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#brews"/>
+        <Class IRI="#BrewingTemperature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBrewingTemperature"/>
+        <Class IRI="#SteepedDrink"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCaffeine"/>
+        <Class IRI="#SteepedDrink"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#brews"/>
+        <Class IRI="#SteepedDrink"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBrewingTemperature"/>
+        <Class IRI="#BrewingTemperature"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi -->
+
