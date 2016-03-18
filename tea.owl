@@ -23,7 +23,10 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
-        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpicyFlavor"/>
+        <Class IRI="CompatibleBlend"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpiceFlavor"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#AllspiceFlavor"/>
@@ -323,6 +326,12 @@
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#YerbaMate"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="fromSource"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="withStrength"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#brews"/>
     </Declaration>
     <Declaration>
@@ -346,6 +355,13 @@
     <Declaration>
         <ObjectProperty IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#hasFlavorCompatibility"/>
     </Declaration>
+    <EquivalentClasses>
+        <Class IRI="CompatibleBlend"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#contains"/>
+            <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#FlavorCompatibility"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#Blend"/>
         <ObjectMinCardinality cardinality="2">
@@ -403,12 +419,20 @@
         </ObjectExactCardinality>
     </EquivalentClasses>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpicyFlavor"/>
+        <Class IRI="CompatibleBlend"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#Blend"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpiceFlavor"/>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#Flavor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#AllspiceFlavor"/>
-        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpicyFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpiceFlavor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#AllspiceFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#SpicyFlavor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#AnimalFlavor"/>
@@ -416,7 +440,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#AniseFlavor"/>
-        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpicyFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpiceFlavor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#AniseFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#SpicyFlavor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ArilPart"/>
@@ -432,11 +460,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#BasilFlavor"/>
-        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpicyFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpiceFlavor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#BayLeafFlavor"/>
-        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpicyFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpiceFlavor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#BayLeafFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#HerbalFlavor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#BerryPart"/>
@@ -444,11 +476,19 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#BlackCarawayFlavor"/>
-        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpicyFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpiceFlavor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#BlackCarawayFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#SpicyFlavor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#BlackPepperFlavor"/>
-        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpicyFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpiceFlavor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#BlackPepperFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#SpicyFlavor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#BlackTea"/>
@@ -483,51 +523,99 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#CapsicumsFlavor"/>
-        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpicyFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpiceFlavor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#CapsicumsFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#SpicyFlavor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#CarawaySeedFlavor"/>
-        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpicyFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpiceFlavor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#CarawaySeedFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#SpicyFlavor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#CardamomFlavor"/>
-        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpicyFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpiceFlavor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#CardamomFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#SpicyFlavor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#CelerySeedFlavor"/>
-        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpicyFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpiceFlavor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#CelerySeedFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#SpicyFlavor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ChamomileFlavor"/>
-        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpicyFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpiceFlavor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ChamomileFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#FloralFlavor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ChervilFlavor"/>
-        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpicyFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpiceFlavor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ChervilFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#HerbalFlavor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ChiveFlavor"/>
-        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpicyFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpiceFlavor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ChiveFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#HerbalFlavor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#CilantroFlavor"/>
-        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpicyFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpiceFlavor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#CilantroFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#HerbalFlavor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#CinnamonFlavor"/>
-        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpicyFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpiceFlavor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#CinnamonFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#SpicyFlavor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#CloveFlavor"/>
-        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpicyFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpiceFlavor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#CloveFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#SpicyFlavor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#CorianderSeedFlavor"/>
-        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpicyFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpiceFlavor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#CorianderSeedFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#SpicyFlavor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#CuminSeedFlavor"/>
-        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpicyFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpiceFlavor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#CuminSeedFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#SpicyFlavor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#Decaffeinated"/>
@@ -543,11 +631,19 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#DillSeedFlavor"/>
-        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpicyFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpiceFlavor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#DillSeedFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#SpicyFlavor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#DillWeedFlavor"/>
-        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpicyFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpiceFlavor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#DillWeedFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#HerbalFlavor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#EarthyFlavor"/>
@@ -555,11 +651,19 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#FennelSeedFlavor"/>
-        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpicyFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpiceFlavor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#FennelSeedFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#SpicyFlavor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#FenugreekSeedFlavor"/>
-        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpicyFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpiceFlavor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#FenugreekSeedFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#SpicyFlavor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#FloralFlavor"/>
@@ -579,15 +683,27 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#GalangalFlavor"/>
-        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpicyFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpiceFlavor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#GalangalFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#SpicyFlavor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#GingerFlavor"/>
-        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpicyFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpiceFlavor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#GingerFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#SpicyFlavor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#GreenPeppercornFlavor"/>
-        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpicyFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpiceFlavor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#GreenPeppercornFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#SpicyFlavor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#GreenTea"/>
@@ -618,15 +734,27 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#HorseradishFlavor"/>
-        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpicyFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpiceFlavor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#HorseradishFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#SpicyFlavor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#JuniperFlavor"/>
-        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpicyFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpiceFlavor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#JuniperFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#SpicyFlavor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#LavenderFlavor"/>
-        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpicyFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpiceFlavor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#LavenderFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#FloralFlavor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#LeafPart"/>
@@ -634,7 +762,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#LemonBalmFlavor"/>
-        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpicyFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpiceFlavor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#LemonBalmFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#HerbalFlavor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#LowBrewingTemperature"/>
@@ -642,11 +774,19 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#MaceFlavor"/>
-        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpicyFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpiceFlavor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#MaceFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#SpicyFlavor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#MajoramLeafFlavor"/>
-        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpicyFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpiceFlavor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#MajoramLeafFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#HerbalFlavor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#MarineFlavor"/>
@@ -666,11 +806,19 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#MustardSeedFlavor"/>
-        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpicyFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpiceFlavor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#MustardSeedFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#SpicyFlavor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#NutmegFlavor"/>
-        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpicyFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpiceFlavor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#NutmegFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#SpicyFlavor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#NuttyFlavor"/>
@@ -682,27 +830,51 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#OreganoLeafFlavor"/>
-        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpicyFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpiceFlavor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#OreganoLeafFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#HerbalFlavor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#PaprikaFlavor"/>
-        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpicyFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpiceFlavor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#PaprikaFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#SpicyFlavor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ParsleyFlavor"/>
-        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpicyFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpiceFlavor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ParsleyFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#HerbalFlavor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#PeppermintLeafFlavor"/>
-        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpicyFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpiceFlavor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#PeppermintLeafFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#HerbalFlavor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#PinkPeppercornFlavor"/>
-        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpicyFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpiceFlavor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#PinkPeppercornFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#SpicyFlavor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#PoppySeedFlavor"/>
-        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpicyFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpiceFlavor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#PoppySeedFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#SpicyFlavor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#Pu-ErhTea"/>
@@ -722,15 +894,27 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#RosemaryFlavor"/>
-        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpicyFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpiceFlavor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#RosemaryFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#HerbalFlavor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#SageFlavor"/>
-        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpicyFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpiceFlavor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#SageFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#HerbalFlavor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#SavoryLeafFlavor"/>
-        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpicyFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpiceFlavor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#SavoryLeafFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#HerbalFlavor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#SeedPart"/>
@@ -742,11 +926,19 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#SesameSeedFlavor"/>
-        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpicyFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpiceFlavor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#SesameSeedFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#SpicyFlavor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#SpearmintFlavor"/>
-        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpicyFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpiceFlavor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#SpearmintFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#HerbalFlavor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#SpicyFlavor"/>
@@ -754,7 +946,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#StarAniseFlavor"/>
-        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpicyFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpiceFlavor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#StarAniseFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#SpicyFlavor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#SteepedDrink"/>
@@ -776,7 +972,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#TarragonFlavor"/>
-        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpicyFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpiceFlavor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#TarragonFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#HerbalFlavor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#Tea"/>
@@ -784,7 +984,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ThymeFlavor"/>
-        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpicyFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpiceFlavor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ThymeFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#HerbalFlavor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#Tisane"/>
@@ -796,7 +1000,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#VanillaFlavor"/>
-        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpicyFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpiceFlavor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#VanillaFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#SweetFlavor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#VegetalFlavor"/>
@@ -804,7 +1012,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#WhitePepperFlavor"/>
-        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpicyFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#ASTASpiceFlavor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#WhitePepperFlavor"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#SpicyFlavor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#WhiteTea"/>
@@ -831,13 +1043,21 @@
         <ObjectProperty IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#brews"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#compatibilityOf"/>
         <ObjectProperty IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#hasFlavorCompatibility"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#compatibilityOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#flavorOf"/>
         <ObjectProperty IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#hasFlavor"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#flavorOf"/>
     </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="fromSource"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#FlavorCompatibility"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="withStrength"/>
+        <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#FlavorCompatibility"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#brews"/>
         <Class IRI="http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#BrewingTemperature"/>
@@ -888,6 +1108,16 @@
     </ObjectPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#AnimalFlavor</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a flavor that is musky or evocative of leather</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#AnimalFlavor</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Animal Flavor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#AuthoritativeFlavorCompatibility</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Any Flavor Compatibility stated in some published source, such as a recipe book, or represented by an existing Blend sold by a company</Literal>
     </AnnotationAssertion>
@@ -898,6 +1128,116 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#EarthyFlavor</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a flavor that is peaty or evocative of dirt or soil</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#EarthyFlavor</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Earthy Flavor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#Flavor</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">the blend of taste and smell sensations evoked by a substance in the mouth</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#Flavor</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Merriam-Webster online dictionary</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#Flavor</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Flavor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#FlavorCompatibility</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Two or more flavors deemed to be compatible by some source with some strength</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#FlavorCompatibility</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Flavor Compatibility</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#FloralFlavor</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a flavor that is evocative of flowers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#FloralFlavor</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Floral Flavor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#FruityFlavor</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a flavor that is evocative of fruit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#FruityFlavor</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Fruity Flavor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#HerbalFlavor</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Herbal Flavor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#HerbalFlavor</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a flavor that is evocative of culinary/medicinal herbs - leaves of plants used for savory or medicinal purposes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#MarineFlavor</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a flavor that is salty, fishy, or evocative of the sea</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#MarineFlavor</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Marine Flavor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#NuttyFlavor</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a flavor that is evocative of nuts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#NuttyFlavor</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Nutty Flavor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#SpicyFlavor</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a flavor that is evocative of culinary/medicinal spices - aromatic substances obtained from roots, flowers, fruits, seeds or bark; not necessarily capsaicin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#SpicyFlavor</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Spicy Flavor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#SteepedDrink</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A beverage that has been prepared by allowing ingredients to soak in water at a temperature under the boiling point.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#SweetFlavor</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a flavor that is sugary or syrupy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#SweetFlavor</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Sweet Flavor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#UserStatedFlavorCompatibility</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A Flavor Compatibility given by site user ratings, with an associated strength value calculated as an aggregation over all provided ratings.</Literal>
     </AnnotationAssertion>
@@ -905,6 +1245,26 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#UserStatedFlavorCompatibility</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">User Stated Flavor Compatibility</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#VegetalFlavor</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a flavor that is leafy, grassy, or evocative of a vegetable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#VegetalFlavor</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Vegetal Flavor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#WoodyFlavor</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a flavor that is evocative of wood or trees</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/ca/ontologies/2016/2/untitled-ontology-5#WoodyFlavor</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Woody Flavor</Literal>
     </AnnotationAssertion>
 </Ontology>
 
