@@ -46,9 +46,7 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_6_TeaTeam/contains -->
 
-    <ObjectProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_6_TeaTeam/contains">
-        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
-    </ObjectProperty>
+    <ObjectProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_6_TeaTeam/contains"/>
     
 
 
@@ -171,16 +169,6 @@
 
     <Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_6_TeaTeam/ArilPart">
         <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_6_TeaTeam/PlantPart"/>
-    </Class>
-    
-
-
-    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_6_TeaTeam/AuthoritativeFlavorCompatibility -->
-
-    <Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_6_TeaTeam/AuthoritativeFlavorCompatibility">
-        <rdfs:label xml:lang="en">authoritative flavor compatibility</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_6_TeaTeam/FlavorCompatibility"/>
-        <rdfs:comment xml:lang="en">Any Flavor Compatibility stated in some published source, such as a recipe book, or represented by an existing Blend sold by a company</rdfs:comment>
     </Class>
     
 
@@ -442,8 +430,7 @@
         <equivalentClass>
             <Restriction>
                 <onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_6_TeaTeam/contains"/>
-                <onClass rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_6_TeaTeam/FlavorCompatibility"/>
-                <minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</minQualifiedCardinality>
+                <someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_6_TeaTeam/FlavorCompatibility"/>
             </Restriction>
         </equivalentClass>
         <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_6_TeaTeam/Blend"/>
@@ -581,16 +568,15 @@
         <rdfs:label xml:lang="en">flavor compatibility</rdfs:label>
         <equivalentClass>
             <Restriction>
-                <onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_6_TeaTeam/compatibilityOf"/>
-                <onClass rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_6_TeaTeam/Flavor"/>
-                <minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</minQualifiedCardinality>
+                <onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_6_TeaTeam/fromSource"/>
+                <someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_6_TeaTeam/Source"/>
             </Restriction>
         </equivalentClass>
         <equivalentClass>
             <Restriction>
-                <onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_6_TeaTeam/fromSource"/>
-                <onClass rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_6_TeaTeam/Source"/>
-                <minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</minQualifiedCardinality>
+                <onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_6_TeaTeam/compatibilityOf"/>
+                <onClass rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_6_TeaTeam/Flavor"/>
+                <minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</minQualifiedCardinality>
             </Restriction>
         </equivalentClass>
         <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_6_TeaTeam/DomainConcept"/>
@@ -1077,21 +1063,21 @@
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_6_TeaTeam/SteepedDrink -->
 
     <Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_6_TeaTeam/SteepedDrink">
-        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_6_TeaTeam/DomainConcept"/>
-        <rdfs:subClassOf>
+        <equivalentClass>
             <Restriction>
                 <onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_6_TeaTeam/hasBrewingTemperature"/>
                 <onClass rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_6_TeaTeam/BrewingTemperature"/>
                 <minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</minQualifiedCardinality>
             </Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
+        </equivalentClass>
+        <equivalentClass>
             <Restriction>
                 <onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_6_TeaTeam/hasFlavor"/>
                 <onClass rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_6_TeaTeam/Flavor"/>
                 <minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</minQualifiedCardinality>
             </Restriction>
-        </rdfs:subClassOf>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_6_TeaTeam/DomainConcept"/>
         <rdfs:comment xml:lang="en">A beverage that has been prepared by allowing ingredients to soak in water at a temperature under the boiling point.</rdfs:comment>
     </Class>
     
@@ -1151,26 +1137,10 @@
     
 
 
-    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_6_TeaTeam/UserAggregatedSource -->
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_6_TeaTeam/UserSource -->
 
-    <Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_6_TeaTeam/UserAggregatedSource">
+    <Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_6_TeaTeam/UserSource">
         <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_6_TeaTeam/Source"/>
-    </Class>
-    
-
-
-    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_6_TeaTeam/UserStatedFlavorCompatibility -->
-
-    <Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_6_TeaTeam/UserStatedFlavorCompatibility">
-        <rdfs:label xml:lang="en">user stated flavor compatibility</rdfs:label>
-        <equivalentClass>
-            <Restriction>
-                <onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_6_TeaTeam/fromSource"/>
-                <allValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_6_TeaTeam/UserAggregatedSource"/>
-            </Restriction>
-        </equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_6_TeaTeam/FlavorCompatibility"/>
-        <rdfs:comment xml:lang="en">A Flavor Compatibility given by site user ratings, with an associated strength value calculated as an aggregation over all provided ratings.</rdfs:comment>
     </Class>
     
 
