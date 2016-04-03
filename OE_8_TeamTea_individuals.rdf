@@ -1,0 +1,229 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ca/ontologies/2016/3/untitled-ontology-28#"
+     xml:base="http://www.semanticweb.org/ca/ontologies/2016/3/untitled-ontology-28"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ca/ontologies/2016/3/untitled-ontology-28">
+        <owl:imports rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ca/ontologies/2016/3/untitled-ontology-28#example_bancha -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ca/ontologies/2016/3/untitled-ontology-28#example_bancha">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/BanchaGreenTea"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/NuttyFlavor"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/SweetFlavor"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ca/ontologies/2016/3/untitled-ontology-28#example_oolong -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ca/ontologies/2016/3/untitled-ontology-28#example_oolong">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/OolongTea"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/EarthyFlavor"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ca/ontologies/2016/3/untitled-ontology-28#example_yerba_mate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ca/ontologies/2016/3/untitled-ontology-28#example_yerba_mate">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/YerbaMate"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/HerbalFlavor"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ca/ontologies/2016/3/untitled-ontology-28#ginger_tea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ca/ontologies/2016/3/untitled-ontology-28#ginger_tea">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/DecaffeinatedSteepedDrink"/>
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/Tisane"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/GingerFlavor"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/madeFromPart"/>
+                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/RootPart"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ca/ontologies/2016/3/untitled-ontology-28#peppermint_tea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ca/ontologies/2016/3/untitled-ontology-28#peppermint_tea">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/MintTea"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/PeppermintLeafFlavor"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ca/ontologies/2016/3/untitled-ontology-28#rose_hip_tea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ca/ontologies/2016/3/untitled-ontology-28#rose_hip_tea">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/DecaffeinatedSteepedDrink"/>
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/Tisane"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/madeFromPart"/>
+                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/FruitPart"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/madeFromPart"/>
+                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/FruityFlavor"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ca/ontologies/2016/3/untitled-ontology-28#seaweed_tisane -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ca/ontologies/2016/3/untitled-ontology-28#seaweed_tisane">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/DecaffeinatedSteepedDrink"/>
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/Tisane"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/MarineFlavor"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/madeFromPart"/>
+                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/LeafPart"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ca/ontologies/2016/3/untitled-ontology-28#snow_buds_tea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ca/ontologies/2016/3/untitled-ontology-28#snow_buds_tea">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/WhiteTea"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/VegetalFlavor"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ca/ontologies/2016/3/untitled-ontology-28#spearmint_tea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ca/ontologies/2016/3/untitled-ontology-28#spearmint_tea">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/MintTea"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/SpearmintFlavor"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ca/ontologies/2016/3/untitled-ontology-28#spicy_black_tea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ca/ontologies/2016/3/untitled-ontology-28#spicy_black_tea">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/BlackTea"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/SpicyFlavor"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ca/ontologies/2016/3/untitled-ontology-28#vegetal_aged_pu-erh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ca/ontologies/2016/3/untitled-ontology-28#vegetal_aged_pu-erh">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/AgedRipePu-ErhTea"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/VegetalFlavor"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ca/ontologies/2016/3/untitled-ontology-28#vegetal_sweet_sencha_tea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ca/ontologies/2016/3/untitled-ontology-28#vegetal_sweet_sencha_tea">
+        <rdf:type rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/SenchaGreenTea"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/SweetFlavor"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/VegetalFlavor"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.1.20160306-0033) https://github.com/owlcs/owlapi -->
+

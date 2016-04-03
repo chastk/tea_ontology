@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1459224017628" name="http://www.w3.org/2002/07/owl" uri="OE_7_TeamTea.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1459682093581" name="http://www.semanticweb.org/ca/ontologies/2016/3/untitled-ontology-28" uri="OE_8_TeamTea_individuals.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1459682093581" name="http://www.w3.org/2002/07/owl" uri="OE_8_TeamTea.rdf"/>
     </group>
 </catalog>
