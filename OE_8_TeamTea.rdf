@@ -1,12 +1,110 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
      xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:np="http://www.nanopub.org/nschema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dcterms="http://purl.org/dc/terms"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <Ontology rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/abstract -->
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/format -->
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/format"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/hasVersion -->
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/hasVersion"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/references -->
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/references"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/subject -->
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/subject"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/type -->
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/type"/>
     
 
 
@@ -184,19 +282,19 @@
         <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/PlantPart"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/brewsAt"/>
+                <onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/hasBrewingTemperature"/>
                 <someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/HighBrewingTemperature"/>
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/brewsAt"/>
+                <onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/hasBrewingTemperature"/>
                 <someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/LowBrewingTemperature"/>
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/brewsAt"/>
+                <onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/hasBrewingTemperature"/>
                 <someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/MediumBrewingTemperature"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -222,7 +320,7 @@
         <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/PlantPart"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/brewsAt"/>
+                <onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/hasBrewingTemperature"/>
                 <someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/HighBrewingTemperature"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -692,19 +790,19 @@
         <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/PlantPart"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/brewsAt"/>
+                <onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/hasBrewingTemperature"/>
                 <someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/HighBrewingTemperature"/>
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/brewsAt"/>
+                <onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/hasBrewingTemperature"/>
                 <someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/LowBrewingTemperature"/>
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/brewsAt"/>
+                <onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/hasBrewingTemperature"/>
                 <someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/MediumBrewingTemperature"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -720,7 +818,7 @@
         <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/PlantPart"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/brewsAt"/>
+                <onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/hasBrewingTemperature"/>
                 <someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/HighBrewingTemperature"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -891,19 +989,19 @@
         <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/PlantPart"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/brewsAt"/>
+                <onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/hasBrewingTemperature"/>
                 <someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/HighBrewingTemperature"/>
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/brewsAt"/>
+                <onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/hasBrewingTemperature"/>
                 <someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/LowBrewingTemperature"/>
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/brewsAt"/>
+                <onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/hasBrewingTemperature"/>
                 <someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/MediumBrewingTemperature"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -1165,7 +1263,7 @@
         <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/PlantPart"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/brewsAt"/>
+                <onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/hasBrewingTemperature"/>
                 <someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/HighBrewingTemperature"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -1214,7 +1312,7 @@
         <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/PlantPart"/>
         <rdfs:subClassOf>
             <Restriction>
-                <onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/brewsAt"/>
+                <onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/hasBrewingTemperature"/>
                 <someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/HighBrewingTemperature"/>
             </Restriction>
         </rdfs:subClassOf>
@@ -1437,6 +1535,29 @@
         <rdfs:comment>A pu-erh tea that is less than three years old</rdfs:comment>
         <rdfs:label xml:lang="en">young raw pu-erh tea</rdfs:label>
     </Class>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#Assertion -->
+
+    <Class rdf:about="http://www.nanopub.org/nschema#Assertion">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/03/trix/rdfg-1/Graph"/>
+        <rdfs:label xml:lang="en">Assertion</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.nanopub.org/nschema#Nanopublication -->
+
+    <Class rdf:about="http://www.nanopub.org/nschema#Nanopublication">
+        <rdfs:label xml:lang="en">Nanopublication</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.w3.org/2004/03/trix/rdfg-1/Graph -->
+
+    <Class rdf:about="http://www.w3.org/2004/03/trix/rdfg-1/Graph"/>
 </rdf:RDF>
 
 
