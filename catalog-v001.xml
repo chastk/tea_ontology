@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri id="Imports Wizard Entry" name="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/" uri="OE_8_TeamTea.rdf"/>
-    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1459684079163" name="duplicate:http://www.w3.org/2002/07/owl" uri="OE_8_TeamTea.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1459684079163" name="duplicate:http://www.w3.org/2002/07/owl" uri="OE_8_TeamTea_individuals.rdf"/>
-    </group>
+        <uri id="User Entered Import Resolution" name="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/" uri="OE_8_TeamTea-efk.rdf"/>
+        <uri id="User Entered Import Resolution" name="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam_Individuals/" uri="OE_8_TeamTea_Individuals.rdf"/>
 </catalog>
+
