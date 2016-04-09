@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-        <uri id="User Entered Import Resolution" name="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/" uri="OE_8_TeamTea-efk.rdf"/>
-        <uri id="User Entered Import Resolution" name="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam_Individuals/" uri="OE_8_TeamTea_Individuals.rdf"/>
+    <uri id="Imports Wizard Entry" name="http://www.w3.org/2004/02/skos/core" uri="http://www.w3.org/2004/02/skos/core#"/>
+    <uri id="Imports Wizard Entry" name="http://www.w3.org/2004/02/skos/core" uri="http://www.w3.org/2004/02/skos/core"/>
+    <uri id="Imports Wizard Entry" name="http://www.w3.org/ns/prov-o-inverses-20130430" uri="http://www.w3.org/ns/prov#"/>
+    <uri id="Imports Wizard Entry" name="http://www.w3.org/2004/02/skos/core" uri="http://www.w3.org/2004/02/skos/core#"/>
+    <uri id="User Entered Import Resolution" name="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/" uri="OE_8_TeamTea-efk.rdf"/>
+    <uri id="User Entered Import Resolution" name="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam_Individuals/" uri="OE_8_TeamTea_Individuals.rdf"/>
 </catalog>
-
