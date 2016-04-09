@@ -1555,6 +1555,7 @@
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/DomainConcept"/>
+        <dct:source>Adapted from Merriam-Webster: http://www.merriam-webster.com/dictionary/steep (sense 3)</dct:source>
         <rdfs:label xml:lang="en">steeped drink</rdfs:label>
         <skos:definition xml:lang="en">A beverage that has been prepared by allowing ingredients to soak in water at a temperature under the boiling point.</skos:definition>
     </owl:Class>
