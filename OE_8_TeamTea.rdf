@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF xmlns="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/"
      xml:base="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/"
      xmlns:tea="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/"
@@ -191,7 +191,7 @@
     <owl:ObjectProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/brews">
         <owl:inverseOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/hasBrewingTemperature"/>
         <rdfs:domain rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/BrewingTemperature"/>
-        <rdfs:comment>the steepedDrinks a particular brewing temperature range can steep</rdfs:comment>
+        <skos:definition>the steepedDrinks a particular brewing temperature range can steep</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -199,7 +199,7 @@
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/brewsAt -->
 
     <owl:ObjectProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/brewsAt">
-        <rdfs:comment xml:lang="en">Relates a Plant Part to its appropriate Brewing Temperature(s)</rdfs:comment>
+        <skos:definition xml:lang="en">Relates a Plant Part to its appropriate Brewing Temperature(s)</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -207,7 +207,7 @@
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/contains -->
 
     <owl:ObjectProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/contains">
-        <rdfs:comment>used for blend to indicate which steepedDrinks are part of that blend</rdfs:comment>
+        <skos:definition>used for blend to indicate which steepedDrinks are part of that blend</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -216,7 +216,7 @@
 
     <owl:ObjectProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/flavorOf">
         <owl:inverseOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/hasFlavor"/>
-        <rdfs:comment>the steepedDrinks a particular flavor flavors</rdfs:comment>
+        <skos:definition>the steepedDrinks a particular flavor flavors</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -235,7 +235,7 @@
             <rdf:Description rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/madeFromPart"/>
             <rdf:Description rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/brewsAt"/>
         </owl:propertyChainAxiom>
-        <rdfs:comment>the brewing temperature range used for a particular steepedDrink</rdfs:comment>
+        <skos:definition>the brewing temperature range used for a particular steepedDrink</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -244,7 +244,7 @@
 
     <owl:ObjectProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/hasCaffeine">
         <rdfs:range rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/Caffeination"/>
-        <rdfs:comment>has caffeination value of caffeine or no caffeine</rdfs:comment>
+        <skos:definition>has caffeination value of caffeine or no caffeine</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -252,7 +252,7 @@
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/hasFlavor -->
 
     <owl:ObjectProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/hasFlavor">
-        <rdfs:comment>the flavor of a particular steepedDrink</rdfs:comment>
+        <skos:definition>the flavor of a particular steepedDrink</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -261,7 +261,7 @@
 
     <owl:ObjectProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/madeFromPart">
         <rdfs:range rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_8_TeaTeam/PlantPart"/>
-        <rdfs:comment>defines what kind of plant part a tisane is made from</rdfs:comment>
+        <skos:definition>defines what kind of plant part a tisane is made from</skos:definition>
     </owl:ObjectProperty>
     
 

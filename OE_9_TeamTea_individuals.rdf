@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY dct "http://purl.org/dc/terms/" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY np "http://www.nanopub.org/nschema#" >
+    <!ENTITY rdfg-1 "http://www.w3.org/2004/03/trix/rdfg-1/" >
+
+    <!ENTITY tea "http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/" >
+    <!ENTITY tea-ind "http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam_Individuals/" >
+]>
+
+<rdf:RDF 
+     xml:base="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam_Individuals/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:np="http://www.nanopub.org/nschema#"
+     xmlns:rdfg-1="http://www.w3.org/2004/03/trix/rdfg-1/"
+     xmlns:tea="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/"
+     xmlns:tea-ind="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam_Individuals/">
+
+    <owl:Ontology rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam_Individuals/">
+
+        <owl:imports rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/"/>
+    </owl:Ontology>
+    
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+    <!-- &tea-ind;exampleBancha -->
+
+    <owl:NamedIndividual rdf:about="&tea-ind;exampleBancha">
+        <rdf:type rdf:resource="&tea;BanchaGreenTea"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tea;hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="&tea;NuttyFlavor"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tea;hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="&tea;SweetFlavor"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &tea-ind;exampleOolong -->
+
+    <owl:NamedIndividual rdf:about="&tea-ind;exampleOolong">
+        <rdf:type rdf:resource="&tea;OolongTea"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tea;hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="&tea;EarthyFlavor"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &tea-ind;exampleYerbaMate -->
+
+    <owl:NamedIndividual rdf:about="&tea-ind;exampleYerbaMate">
+        <rdf:type rdf:resource="&tea;YerbaMate"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tea;hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="&tea;HerbalFlavor"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &tea-ind;gingerTisane -->
+
+    <owl:NamedIndividual rdf:about="&tea-ind;gingerTisane">
+        <rdf:type rdf:resource="&tea;DecaffeinatedSteepedDrink"/>
+        <rdf:type rdf:resource="&tea;Tisane"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tea;hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="&tea;GingerFlavor"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tea;madeFromPart"/>
+                <owl:someValuesFrom rdf:resource="&tea;RootPart"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &tea-ind;peppermintTisane -->
+
+    <owl:NamedIndividual rdf:about="&tea-ind;peppermintTisane">
+        <rdf:type rdf:resource="&tea;MintTea"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tea;hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="&tea;PeppermintLeafFlavor"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &tea-ind;rosehipTisane -->
+
+    <owl:NamedIndividual rdf:about="&tea-ind;rosehipTisane">
+        <rdf:type rdf:resource="&tea;DecaffeinatedSteepedDrink"/>
+        <rdf:type rdf:resource="&tea;Tisane"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tea;hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="&tea;FruityFlavor"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tea;madeFromPart"/>
+                <owl:someValuesFrom rdf:resource="&tea;ArilPart"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &tea-ind;seaweedTisane -->
+
+    <owl:NamedIndividual rdf:about="&tea-ind;seaweedTisane">
+        <rdf:type rdf:resource="&tea;DecaffeinatedSteepedDrink"/>
+        <rdf:type rdf:resource="&tea;Tisane"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tea;hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="&tea;MarineFlavor"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tea;madeFromPart"/>
+                <owl:someValuesFrom rdf:resource="&tea;LeafPart"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &tea-ind;snowbudsTea -->
+
+    <owl:NamedIndividual rdf:about="&tea-ind;snowbudsTea">
+        <rdf:type rdf:resource="&tea;WhiteTea"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tea;hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="&tea;VegetalFlavor"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &tea-ind;spearmintTisane -->
+
+    <owl:NamedIndividual rdf:about="&tea-ind;spearmintTisane">
+        <rdf:type rdf:resource="&tea;MintTea"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tea;hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="&tea;SpearmintFlavor"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &tea-ind;spicyBlackTea -->
+
+    <owl:NamedIndividual rdf:about="&tea-ind;spicyBlackTea">
+        <rdf:type rdf:resource="&tea;BlackTea"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tea;hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="&tea;SpicyFlavor"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &tea-ind;vegetalAgedPuerhTea -->
+
+    <owl:NamedIndividual rdf:about="&tea-ind;vegetalAgedPuerhTea">
+        <rdf:type rdf:resource="&tea;AgedRipePu-ErhTea"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tea;hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="&tea;VegetalFlavor"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- &tea-ind;vegetalSweetSenchaTea -->
+
+    <owl:NamedIndividual rdf:about="&tea-ind;vegetalSweetSenchaTea">
+        <rdf:type rdf:resource="&tea;SenchaGreenTea"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tea;hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="&tea;SweetFlavor"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&tea;hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="&tea;VegetalFlavor"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+</rdf:RDF>
