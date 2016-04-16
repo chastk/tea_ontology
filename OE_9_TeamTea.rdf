@@ -1,36 +1,23 @@
 <?xml version="1.0"?>
-
-
-<!DOCTYPE rdf:RDF [
-    <!ENTITY dct "http://purl.org/dc/terms/" >
-    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
-    <!ENTITY np "http://www.nanopub.org/nschema#" >
-    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
-    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
-    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
-    <!ENTITY rdfg-1 "http://www.w3.org/2004/03/trix/rdfg-1/" >
-    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-    <!ENTITY tea "http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/" >
-]>
-
-
 <rdf:RDF xmlns="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/"
      xml:base="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/"
-     xmlns:rdfg-1="http://www.w3.org/2004/03/trix/rdfg-1/"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:tea="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/"
      xmlns:np="http://www.nanopub.org/nschema#"
      xmlns:dct="http://purl.org/dc/terms/"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:tea="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdfg-1="http://www.w3.org/2004/03/trix/rdfg-1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/">
+        <owl:imports rdf:resource="http://www.nanopub.org/nschema#"/>
+        <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <rdfs:label>Tea Ontology</rdfs:label>
         <dct:creator xml:lang="en">Cara Reedy</dct:creator>
         <dct:creator xml:lang="en">Katie Chastain</dct:creator>
-        <owl:imports rdf:resource="http://www.nanopub.org/nschema#"/>
-        <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
     </owl:Ontology>
     
 
@@ -48,145 +35,145 @@
 
     <!-- http://purl.org/dc/terms/abstract -->
 
-    <owl:AnnotationProperty rdf:about="&dct;abstract"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract"/>
     
 
 
     <!-- http://purl.org/dc/terms/contributor -->
 
-    <owl:AnnotationProperty rdf:about="&dct;contributor"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
     
 
 
     <!-- http://purl.org/dc/terms/creator -->
 
-    <owl:AnnotationProperty rdf:about="&dct;creator"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
     
 
 
     <!-- http://purl.org/dc/terms/description -->
 
-    <owl:AnnotationProperty rdf:about="&dct;description"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
     
 
 
     <!-- http://purl.org/dc/terms/format -->
 
-    <owl:AnnotationProperty rdf:about="&dct;format"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/format"/>
     
 
 
     <!-- http://purl.org/dc/terms/hasVersion -->
 
-    <owl:AnnotationProperty rdf:about="&dct;hasVersion"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/hasVersion"/>
     
 
 
     <!-- http://purl.org/dc/terms/identifier -->
 
-    <owl:AnnotationProperty rdf:about="&dct;identifier"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier"/>
     
 
 
     <!-- http://purl.org/dc/terms/issued -->
 
-    <owl:AnnotationProperty rdf:about="&dct;issued"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
     
 
 
     <!-- http://purl.org/dc/terms/license -->
 
-    <owl:AnnotationProperty rdf:about="&dct;license"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
     
 
 
     <!-- http://purl.org/dc/terms/references -->
 
-    <owl:AnnotationProperty rdf:about="&dct;references"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/references"/>
     
 
 
     <!-- http://purl.org/dc/terms/rights -->
 
-    <owl:AnnotationProperty rdf:about="&dct;rights"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rights"/>
     
 
 
     <!-- http://purl.org/dc/terms/source -->
 
-    <owl:AnnotationProperty rdf:about="&dct;source"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
     
 
 
     <!-- http://purl.org/dc/terms/subject -->
 
-    <owl:AnnotationProperty rdf:about="&dct;subject"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/subject"/>
     
 
 
     <!-- http://purl.org/dc/terms/title -->
 
-    <owl:AnnotationProperty rdf:about="&dct;title"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
     
 
 
     <!-- http://purl.org/dc/terms/type -->
 
-    <owl:AnnotationProperty rdf:about="&dct;type"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/type"/>
     
 
 
     <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
 
-    <owl:AnnotationProperty rdf:about="&skos;altLabel"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
     
 
 
     <!-- http://www.w3.org/2004/02/skos/core#changeNote -->
 
-    <owl:AnnotationProperty rdf:about="&skos;changeNote"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#changeNote"/>
     
 
 
     <!-- http://www.w3.org/2004/02/skos/core#definition -->
 
-    <owl:AnnotationProperty rdf:about="&skos;definition"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
     
 
 
     <!-- http://www.w3.org/2004/02/skos/core#editorialNote -->
 
-    <owl:AnnotationProperty rdf:about="&skos;editorialNote"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#editorialNote"/>
     
 
 
     <!-- http://www.w3.org/2004/02/skos/core#example -->
 
-    <owl:AnnotationProperty rdf:about="&skos;example"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example"/>
     
 
 
     <!-- http://www.w3.org/2004/02/skos/core#historyNote -->
 
-    <owl:AnnotationProperty rdf:about="&skos;historyNote"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#historyNote"/>
     
 
 
     <!-- http://www.w3.org/2004/02/skos/core#note -->
 
-    <owl:AnnotationProperty rdf:about="&skos;note"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#note"/>
     
 
 
     <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
 
-    <owl:AnnotationProperty rdf:about="&skos;prefLabel"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
     
 
 
     <!-- http://www.w3.org/2004/02/skos/core#scopeNote -->
 
-    <owl:AnnotationProperty rdf:about="&skos;scopeNote"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#scopeNote"/>
     
 
 
@@ -203,17 +190,19 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/brews -->
 
-    <owl:ObjectProperty rdf:about="&tea;brews">
+    <owl:ObjectProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/brews">
+        <owl:inverseOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/hasBrewingTemperature"/>
+        <rdfs:domain rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/BrewingTemperature"/>
+        <rdfs:label>brews</rdfs:label>
         <skos:definition>the steepedDrinks a particular brewing temperature range can steep</skos:definition>
-        <rdfs:domain rdf:resource="&tea;BrewingTemperature"/>
-        <owl:inverseOf rdf:resource="&tea;hasBrewingTemperature"/>
     </owl:ObjectProperty>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/brewsAt -->
 
-    <owl:ObjectProperty rdf:about="&tea;brewsAt">
+    <owl:ObjectProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/brewsAt">
+        <rdfs:label>brews at</rdfs:label>
         <skos:definition xml:lang="en">Relates a Plant Part to its appropriate Brewing Temperature(s)</skos:definition>
     </owl:ObjectProperty>
     
@@ -221,7 +210,8 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/contains -->
 
-    <owl:ObjectProperty rdf:about="&tea;contains">
+    <owl:ObjectProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/contains">
+        <rdfs:label>contains</rdfs:label>
         <skos:definition>used for blend to indicate which steepedDrinks are part of that blend</skos:definition>
     </owl:ObjectProperty>
     
@@ -229,44 +219,42 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/flavorOf -->
 
-    <owl:ObjectProperty rdf:about="&tea;flavorOf">
+    <owl:ObjectProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/flavorOf">
+        <owl:inverseOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/hasFlavor"/>
+        <rdfs:label>flavor of</rdfs:label>
         <skos:definition>the steepedDrinks a particular flavor flavors</skos:definition>
-        <owl:inverseOf rdf:resource="&tea;hasFlavor"/>
     </owl:ObjectProperty>
-    
-
-
-    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/fromSource -->
-
-    <owl:ObjectProperty rdf:about="&tea;fromSource"/>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/hasBrewingTemperature -->
 
-    <owl:ObjectProperty rdf:about="&tea;hasBrewingTemperature">
-        <skos:definition>the brewing temperature range used for a particular steepedDrink</skos:definition>
-        <rdfs:range rdf:resource="&tea;BrewingTemperature"/>
+    <owl:ObjectProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/hasBrewingTemperature">
+        <rdfs:range rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/BrewingTemperature"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="&tea;madeFromPart"/>
-            <rdf:Description rdf:about="&tea;brewsAt"/>
+            <rdf:Description rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/madeFromPart"/>
+            <rdf:Description rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/brewsAt"/>
         </owl:propertyChainAxiom>
+        <rdfs:label>has brewing temperature</rdfs:label>
+        <skos:definition>the brewing temperature range used for a particular steepedDrink</skos:definition>
     </owl:ObjectProperty>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/hasCaffeine -->
 
-    <owl:ObjectProperty rdf:about="&tea;hasCaffeine">
+    <owl:ObjectProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/hasCaffeine">
+        <rdfs:range rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Caffeination"/>
+        <rdfs:label>has caffeine</rdfs:label>
         <skos:definition>has caffeination value of caffeine or no caffeine</skos:definition>
-        <rdfs:range rdf:resource="&tea;Caffeination"/>
     </owl:ObjectProperty>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/hasFlavor -->
 
-    <owl:ObjectProperty rdf:about="&tea;hasFlavor">
+    <owl:ObjectProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/hasFlavor">
+        <rdfs:label>has flavor</rdfs:label>
         <skos:definition>the flavor of a particular steepedDrink</skos:definition>
     </owl:ObjectProperty>
     
@@ -274,17 +262,19 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/madeFromPart -->
 
-    <owl:ObjectProperty rdf:about="&tea;madeFromPart">
+    <owl:ObjectProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/madeFromPart">
+        <rdfs:range rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/PlantPart"/>
+        <rdfs:label>made from part</rdfs:label>
         <skos:definition>defines what kind of plant part a tisane is made from</skos:definition>
-        <rdfs:range rdf:resource="&tea;PlantPart"/>
     </owl:ObjectProperty>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/withStrength -->
 
-    <owl:ObjectProperty rdf:about="&tea;withStrength">
-        <rdfs:domain rdf:resource="&tea;FlavorCompatibility"/>
+    <owl:ObjectProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/withStrength">
+        <rdfs:domain rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/FlavorCompatibility"/>
+        <rdfs:label>with strength</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -302,10 +292,10 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ASTASpiceFlavor -->
 
-    <owl:Class rdf:about="&tea;ASTASpiceFlavor">
-        <rdfs:label xml:lang="en">ASTA spice flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;Flavor"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ASTASpiceFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Flavor"/>
         <dct:source>ASTA spice list (http://www.astaspice.org/download/9423/)</dct:source>
+        <rdfs:label xml:lang="en">ASTA spice flavor</rdfs:label>
         <skos:definition>a flavor which comes from a spice defined by the ASTA spice list</skos:definition>
     </owl:Class>
     
@@ -313,16 +303,16 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/AgedRipePu-ErhTea -->
 
-    <owl:Class rdf:about="&tea;AgedRipePu-ErhTea">
-        <rdfs:label xml:lang="en">aged raw pu-erh tea</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;Pu-ErhTea"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/AgedRipePu-ErhTea">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Pu-ErhTea"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&tea;hasBrewingTemperature"/>
-                <owl:someValuesFrom rdf:resource="&tea;HighBrewingTemperature"/>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/hasBrewingTemperature"/>
+                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/HighBrewingTemperature"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <dct:source>http://www.seriouseats.com/2015/08/what-is-puerh-tea-where-to-buy.html</dct:source>
+        <rdfs:label xml:lang="en">aged raw pu-erh tea</rdfs:label>
         <skos:definition>A pu-erh tea that is at least three years old</skos:definition>
     </owl:Class>
     
@@ -330,11 +320,11 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/AllspiceFlavor -->
 
-    <owl:Class rdf:about="&tea;AllspiceFlavor">
-        <rdfs:label xml:lang="en">allspice flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;ASTASpiceFlavor"/>
-        <rdfs:subClassOf rdf:resource="&tea;SpicyFlavor"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/AllspiceFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ASTASpiceFlavor"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SpicyFlavor"/>
         <dct:source>ASTA spice list (http://www.astaspice.org/download/9423/)</dct:source>
+        <rdfs:label xml:lang="en">allspice flavor</rdfs:label>
         <skos:definition>a flavor listed in the ASTA list that is reminiscent of allspice, the dried berries of Pimenta dioica</skos:definition>
     </owl:Class>
     
@@ -342,10 +332,10 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/AnimalFlavor -->
 
-    <owl:Class rdf:about="&tea;AnimalFlavor">
-        <rdfs:label xml:lang="en">animal flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;Flavor"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/AnimalFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Flavor"/>
         <dct:source>Adapted from Tea Cupping Standards (http://www.worldoftea.org/tea-cupping-standards/), Stone Leaf Tea&apos;s Tea Guru (http://www.stoneleaftea.com/tea-guru/), and The Australian Tea Maters&apos; Tea Flavour Wheel (https://australianteamasters.wordpress.com/2014/04/30/the-tea-flavour-wheel/)</dct:source>
+        <rdfs:label xml:lang="en">animal flavor</rdfs:label>
         <skos:definition xml:lang="en">a flavor that is musky or evocative of leather</skos:definition>
     </owl:Class>
     
@@ -353,69 +343,69 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/AniseFlavor -->
 
-    <owl:Class rdf:about="&tea;AniseFlavor">
-        <rdfs:label xml:lang="en">anise flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;ASTASpiceFlavor"/>
-        <rdfs:subClassOf rdf:resource="&tea;SpicyFlavor"/>
-        <skos:definition>a flavor listed in the ASTA list that is reminiscent of anise, Pimpinella ansium</skos:definition>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/AniseFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ASTASpiceFlavor"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SpicyFlavor"/>
         <dct:source>ASTA spice list (http://www.astaspice.org/download/9423/)</dct:source>
+        <rdfs:label xml:lang="en">anise flavor</rdfs:label>
+        <skos:definition>a flavor listed in the ASTA list that is reminiscent of anise, Pimpinella ansium</skos:definition>
     </owl:Class>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ArilPart -->
 
-    <owl:Class rdf:about="&tea;ArilPart">
-        <rdfs:label xml:lang="en">aril plant part</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;PlantPart"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ArilPart">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/PlantPart"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&tea;brewsAt"/>
-                <owl:someValuesFrom rdf:resource="&tea;MediumBrewingTemperature"/>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/brewsAt"/>
+                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/HighBrewingTemperature"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&tea;brewsAt"/>
-                <owl:someValuesFrom rdf:resource="&tea;LowBrewingTemperature"/>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/brewsAt"/>
+                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/LowBrewingTemperature"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&tea;brewsAt"/>
-                <owl:someValuesFrom rdf:resource="&tea;HighBrewingTemperature"/>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/brewsAt"/>
+                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/MediumBrewingTemperature"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <skos:definition>the aril of a plant, a growth that partially or fully covers a seed and may look like a fruit itself</skos:definition>
         <dct:source>Adapted from Merriam-Webster online dictionary</dct:source>
+        <rdfs:label xml:lang="en">aril plant part</rdfs:label>
+        <skos:definition>the aril of a plant, a growth that partially or fully covers a seed and may look like a fruit itself</skos:definition>
     </owl:Class>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/BanchaGreenTea -->
 
-    <owl:Class rdf:about="&tea;BanchaGreenTea">
-        <rdfs:label xml:lang="en">bancha green tea</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;GreenTea"/>
-        <skos:definition>A green tea from Japan produced from unshaded steamed leaves that are picked in summer or autumn</skos:definition>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/BanchaGreenTea">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/GreenTea"/>
         <dct:source>http://infohost.nmt.edu/~armiller/japanese/tea.htm</dct:source>
+        <rdfs:label xml:lang="en">bancha green tea</rdfs:label>
         <skos:altLabel>番茶</skos:altLabel>
+        <skos:definition>A green tea from Japan produced from unshaded steamed leaves that are picked in summer or autumn</skos:definition>
     </owl:Class>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/BarkPart -->
 
-    <owl:Class rdf:about="&tea;BarkPart">
-        <rdfs:label xml:lang="en">bark part</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;PlantPart"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/BarkPart">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/PlantPart"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&tea;brewsAt"/>
-                <owl:someValuesFrom rdf:resource="&tea;HighBrewingTemperature"/>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/brewsAt"/>
+                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/HighBrewingTemperature"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <dct:source>Adapted from Merriam-Webster online dictionary</dct:source>
+        <rdfs:label xml:lang="en">bark part</rdfs:label>
         <skos:definition>the bark of a plant, the tough external covering of the stems or roots of woody plants</skos:definition>
     </owl:Class>
     
@@ -423,10 +413,10 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/BasilFlavor -->
 
-    <owl:Class rdf:about="&tea;BasilFlavor">
-        <rdfs:label xml:lang="en">basil flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;ASTASpiceFlavor"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/BasilFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ASTASpiceFlavor"/>
         <dct:source>ASTA spice list (http://www.astaspice.org/download/9423/)</dct:source>
+        <rdfs:label xml:lang="en">basil flavor</rdfs:label>
         <skos:definition>a flavor listed in the ASTA list that is reminiscent of basil, the leaves of Ocimum basilicum</skos:definition>
     </owl:Class>
     
@@ -434,32 +424,32 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/BayLeafFlavor -->
 
-    <owl:Class rdf:about="&tea;BayLeafFlavor">
-        <rdfs:label xml:lang="en">bay leaf flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;ASTASpiceFlavor"/>
-        <rdfs:subClassOf rdf:resource="&tea;HerbalFlavor"/>
-        <skos:definition>a flavor listed in the ASTA list that is reminiscent of bay leaves, a spice made from the leaves of one of several trees in the Lauraceae or Myrtaceae families</skos:definition>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/BayLeafFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ASTASpiceFlavor"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/HerbalFlavor"/>
         <dct:source>ASTA spice list (http://www.astaspice.org/download/9423/)</dct:source>
+        <rdfs:label xml:lang="en">bay leaf flavor</rdfs:label>
+        <skos:definition>a flavor listed in the ASTA list that is reminiscent of bay leaves, a spice made from the leaves of one of several trees in the Lauraceae or Myrtaceae families</skos:definition>
     </owl:Class>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/BerryPart -->
 
-    <owl:Class rdf:about="&tea;BerryPart">
-        <rdfs:label xml:lang="en">berry part</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;FruitPart"/>
-        <skos:definition>culinarily, a fruit that is small and does not have a large seed within it, usually juicy</skos:definition>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/BerryPart">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/FruitPart"/>
         <dct:source>Adapted from Merriam-Webster online dictionary</dct:source>
+        <rdfs:label xml:lang="en">berry part</rdfs:label>
+        <skos:definition>culinarily, a fruit that is small and does not have a large seed within it, usually juicy</skos:definition>
     </owl:Class>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/BitterFlavor -->
 
-    <owl:Class rdf:about="&tea;BitterFlavor">
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/BitterFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Flavor"/>
         <rdfs:label xml:lang="en">bitter flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;Flavor"/>
         <skos:definition xml:lang="en">a flavor that is acrid</skos:definition>
     </owl:Class>
     
@@ -467,11 +457,11 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/BlackCarawayFlavor -->
 
-    <owl:Class rdf:about="&tea;BlackCarawayFlavor">
-        <rdfs:label xml:lang="en">black caraway flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;ASTASpiceFlavor"/>
-        <rdfs:subClassOf rdf:resource="&tea;SpicyFlavor"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/BlackCarawayFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ASTASpiceFlavor"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SpicyFlavor"/>
         <dct:source>ASTA spice list (http://www.astaspice.org/download/9423/)</dct:source>
+        <rdfs:label xml:lang="en">black caraway flavor</rdfs:label>
         <skos:definition xml:lang="en">a flavor listed in the ASTA list that is reminiscent of black caraway, also known as black cumin, the seeds of the planf Nigella sativa</skos:definition>
     </owl:Class>
     
@@ -479,11 +469,11 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/BlackPepperFlavor -->
 
-    <owl:Class rdf:about="&tea;BlackPepperFlavor">
-        <rdfs:label xml:lang="en">black pepper flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;ASTASpiceFlavor"/>
-        <rdfs:subClassOf rdf:resource="&tea;SpicyFlavor"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/BlackPepperFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ASTASpiceFlavor"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SpicyFlavor"/>
         <dct:source>ASTA spice list (http://www.astaspice.org/download/9423/)</dct:source>
+        <rdfs:label xml:lang="en">black pepper flavor</rdfs:label>
         <skos:definition>a flavor listed in the ASTA list that is reminiscent of black pepper, the dried fruits of the flowering vine Piper nigrum</skos:definition>
     </owl:Class>
     
@@ -491,11 +481,17 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/BlackTea -->
 
-    <owl:Class rdf:about="&tea;BlackTea">
-        <rdfs:label xml:lang="en">black tea</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;Tea"/>
-        <skos:altLabel>紅茶</skos:altLabel>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/BlackTea">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Tea"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/hasBrewingTemperature"/>
+                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/MediumBrewingTemperature"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <dct:source>Tea: The Drink that Changed the World</dct:source>
+        <rdfs:label xml:lang="en">black tea</rdfs:label>
+        <skos:altLabel>紅茶</skos:altLabel>
         <skos:definition>Tea that has been withered, rolled, oxidized, and dried; completely oxidized</skos:definition>
     </owl:Class>
     
@@ -503,17 +499,17 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Blend -->
 
-    <owl:Class rdf:about="&tea;Blend">
-        <rdfs:label xml:lang="en">blend</rdfs:label>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Blend">
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&tea;contains"/>
-                <owl:onClass rdf:resource="&tea;SteepedDrink"/>
-                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/contains"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SteepedDrink"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&tea;DomainConcept"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/DomainConcept"/>
         <dct:source>Merriam-Webster online dictionary</dct:source>
+        <rdfs:label xml:lang="en">blend</rdfs:label>
         <skos:definition>the combination of at least 2 steepedDrinks</skos:definition>
     </owl:Class>
     
@@ -521,26 +517,26 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/BrewingTemperature -->
 
-    <owl:Class rdf:about="&tea;BrewingTemperature">
-        <rdfs:label xml:lang="en">brewing temperature</rdfs:label>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/BrewingTemperature">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&tea;HighBrewingTemperature"/>
-                    <rdf:Description rdf:about="&tea;LowBrewingTemperature"/>
-                    <rdf:Description rdf:about="&tea;MediumBrewingTemperature"/>
+                    <rdf:Description rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/HighBrewingTemperature"/>
+                    <rdf:Description rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/LowBrewingTemperature"/>
+                    <rdf:Description rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/MediumBrewingTemperature"/>
                 </owl:unionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&tea;ValuePartition"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ValuePartition"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&tea;brews"/>
-                <owl:onClass rdf:resource="&tea;SteepedDrink"/>
-                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/brews"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SteepedDrink"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <dct:source>http://www.silkroadteas.com/how-to-brew-loose-leaf-tea-brewing-instructions/</dct:source>
+        <rdfs:label xml:lang="en">brewing temperature</rdfs:label>
         <skos:definition>The temperature of the water in which a steeped beverage is steeped</skos:definition>
     </owl:Class>
     
@@ -548,20 +544,20 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/BudPart -->
 
-    <owl:Class rdf:about="&tea;BudPart">
-        <rdfs:label xml:lang="en">bud part</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;FlowerPart"/>
-        <skos:definition>an underdeveloped flower</skos:definition>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/BudPart">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/FlowerPart"/>
         <dct:source>Adapted from Merriam-Webster online dictionary</dct:source>
+        <rdfs:label xml:lang="en">bud part</rdfs:label>
+        <skos:definition>an underdeveloped flower</skos:definition>
     </owl:Class>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Caffeinated -->
 
-    <owl:Class rdf:about="&tea;Caffeinated">
-        <rdfs:subClassOf rdf:resource="&tea;Caffeination"/>
-        <owl:disjointWith rdf:resource="&tea;Decaffeinated"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Caffeinated">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Caffeination"/>
+        <owl:disjointWith rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Decaffeinated"/>
         <skos:definition>Containing caffeine</skos:definition>
     </owl:Class>
     
@@ -569,21 +565,21 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/CaffeinatedSteepedDrink -->
 
-    <owl:Class rdf:about="&tea;CaffeinatedSteepedDrink">
-        <rdfs:label xml:lang="en">caffeinated steeped drink</rdfs:label>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/CaffeinatedSteepedDrink">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&tea;SteepedDrink"/>
+                    <rdf:Description rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SteepedDrink"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&tea;hasCaffeine"/>
-                        <owl:someValuesFrom rdf:resource="&tea;Caffeinated"/>
+                        <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/hasCaffeine"/>
+                        <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Caffeinated"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&tea;SteepedDrink"/>
-        <owl:disjointWith rdf:resource="&tea;DecaffeinatedSteepedDrink"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SteepedDrink"/>
+        <owl:disjointWith rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/DecaffeinatedSteepedDrink"/>
+        <rdfs:label xml:lang="en">caffeinated steeped drink</rdfs:label>
         <skos:definition>a steeped drink that contains caffeine</skos:definition>
     </owl:Class>
     
@@ -591,17 +587,17 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Caffeination -->
 
-    <owl:Class rdf:about="&tea;Caffeination">
-        <rdfs:label xml:lang="en">caffeination</rdfs:label>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Caffeination">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&tea;Caffeinated"/>
-                    <rdf:Description rdf:about="&tea;Decaffeinated"/>
+                    <rdf:Description rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Caffeinated"/>
+                    <rdf:Description rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Decaffeinated"/>
                 </owl:unionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&tea;ValuePartition"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ValuePartition"/>
+        <rdfs:label xml:lang="en">caffeination</rdfs:label>
         <skos:definition>Whether a brew has caffeine in it or not</skos:definition>
     </owl:Class>
     
@@ -609,11 +605,11 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/CapsicumsFlavor -->
 
-    <owl:Class rdf:about="&tea;CapsicumsFlavor">
-        <rdfs:label xml:lang="en">capsicums flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;ASTASpiceFlavor"/>
-        <rdfs:subClassOf rdf:resource="&tea;SpicyFlavor"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/CapsicumsFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ASTASpiceFlavor"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SpicyFlavor"/>
         <dct:source>ASTA spice list (http://www.astaspice.org/download/9423/)</dct:source>
+        <rdfs:label xml:lang="en">capsicums flavor</rdfs:label>
         <skos:definition>a flavor listed in the ASTA list that is reminiscent of capsicums or peppers, the fruit of plants in the genus Capsicum</skos:definition>
     </owl:Class>
     
@@ -621,23 +617,23 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/CarawaySeedFlavor -->
 
-    <owl:Class rdf:about="&tea;CarawaySeedFlavor">
-        <rdfs:label xml:lang="en">caraway seed flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;ASTASpiceFlavor"/>
-        <rdfs:subClassOf rdf:resource="&tea;SpicyFlavor"/>
-        <skos:definition>a flavor listed in the ASTA list that is reminiscent of caraway, the fruits of the plant Carum carvi</skos:definition>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/CarawaySeedFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ASTASpiceFlavor"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SpicyFlavor"/>
         <dct:source>ASTA spice list (http://www.astaspice.org/download/9423/)</dct:source>
+        <rdfs:label xml:lang="en">caraway seed flavor</rdfs:label>
+        <skos:definition>a flavor listed in the ASTA list that is reminiscent of caraway, the fruits of the plant Carum carvi</skos:definition>
     </owl:Class>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/CardamomFlavor -->
 
-    <owl:Class rdf:about="&tea;CardamomFlavor">
-        <rdfs:label xml:lang="en">cardamom flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;ASTASpiceFlavor"/>
-        <rdfs:subClassOf rdf:resource="&tea;SpicyFlavor"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/CardamomFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ASTASpiceFlavor"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SpicyFlavor"/>
         <dct:source>ASTA spice list (http://www.astaspice.org/download/9423/)</dct:source>
+        <rdfs:label xml:lang="en">cardamom flavor</rdfs:label>
         <skos:definition>a flavor listed in the ASTA list that is reminiscent of cardamom, the seeds of one of several plants in the Elettaria and Amomum genuses</skos:definition>
     </owl:Class>
     
@@ -645,35 +641,35 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/CelerySeedFlavor -->
 
-    <owl:Class rdf:about="&tea;CelerySeedFlavor">
-        <rdfs:label xml:lang="en">celery seed flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;ASTASpiceFlavor"/>
-        <rdfs:subClassOf rdf:resource="&tea;SpicyFlavor"/>
-        <skos:definition>a flavor listed in the ASTA list that is reminiscent of celery seed, actually the fruit of the celery plant, Apium graveolens</skos:definition>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/CelerySeedFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ASTASpiceFlavor"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SpicyFlavor"/>
         <dct:source>ASTA spice list (http://www.astaspice.org/download/9423/)</dct:source>
+        <rdfs:label xml:lang="en">celery seed flavor</rdfs:label>
+        <skos:definition>a flavor listed in the ASTA list that is reminiscent of celery seed, actually the fruit of the celery plant, Apium graveolens</skos:definition>
     </owl:Class>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ChamomileFlavor -->
 
-    <owl:Class rdf:about="&tea;ChamomileFlavor">
-        <rdfs:label xml:lang="en">chamomile flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;ASTASpiceFlavor"/>
-        <rdfs:subClassOf rdf:resource="&tea;FloralFlavor"/>
-        <skos:definition>a flavor listed in the ASTA list that is reminiscent of chamomile, made from one of several species in the the family Asteraceae, most commonly Matricaria chamomilla or Chameamelum nobile</skos:definition>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ChamomileFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ASTASpiceFlavor"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/FloralFlavor"/>
         <dct:source>ASTA spice list (http://www.astaspice.org/download/9423/)</dct:source>
+        <rdfs:label xml:lang="en">chamomile flavor</rdfs:label>
+        <skos:definition>a flavor listed in the ASTA list that is reminiscent of chamomile, made from one of several species in the the family Asteraceae, most commonly Matricaria chamomilla or Chameamelum nobile</skos:definition>
     </owl:Class>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ChervilFlavor -->
 
-    <owl:Class rdf:about="&tea;ChervilFlavor">
-        <rdfs:label xml:lang="en">chervil flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;ASTASpiceFlavor"/>
-        <rdfs:subClassOf rdf:resource="&tea;HerbalFlavor"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ChervilFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ASTASpiceFlavor"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/HerbalFlavor"/>
         <dct:source>ASTA spice list (http://www.astaspice.org/download/9423/)</dct:source>
+        <rdfs:label xml:lang="en">chervil flavor</rdfs:label>
         <skos:definition>a flavor listed in the ASTA list that is reminiscent of chervil or French parsley, the plant Anthriscus cerefolium</skos:definition>
     </owl:Class>
     
@@ -681,11 +677,11 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ChiveFlavor -->
 
-    <owl:Class rdf:about="&tea;ChiveFlavor">
-        <rdfs:label xml:lang="en">chive flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;ASTASpiceFlavor"/>
-        <rdfs:subClassOf rdf:resource="&tea;HerbalFlavor"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ChiveFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ASTASpiceFlavor"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/HerbalFlavor"/>
         <dct:source>ASTA spice list (http://www.astaspice.org/download/9423/)</dct:source>
+        <rdfs:label xml:lang="en">chive flavor</rdfs:label>
         <skos:definition>a flavor listed in the ASTA list that is reminiscent of chive, the leaves of the plant Allium schoenoprasum</skos:definition>
     </owl:Class>
     
@@ -693,51 +689,51 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/CilantroFlavor -->
 
-    <owl:Class rdf:about="&tea;CilantroFlavor">
-        <rdfs:label xml:lang="en">cilantro flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;ASTASpiceFlavor"/>
-        <rdfs:subClassOf rdf:resource="&tea;HerbalFlavor"/>
-        <skos:definition>a flavor listed in the ASTA list that is reminiscent of cilantro or coriander, the leaves of the plant Coriandrum sativum</skos:definition>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/CilantroFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ASTASpiceFlavor"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/HerbalFlavor"/>
         <dct:source>ASTA spice list (http://www.astaspice.org/download/9423/)</dct:source>
+        <rdfs:label xml:lang="en">cilantro flavor</rdfs:label>
+        <skos:definition>a flavor listed in the ASTA list that is reminiscent of cilantro or coriander, the leaves of the plant Coriandrum sativum</skos:definition>
     </owl:Class>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/CinnamonFlavor -->
 
-    <owl:Class rdf:about="&tea;CinnamonFlavor">
-        <rdfs:label xml:lang="en">cinnamon flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;ASTASpiceFlavor"/>
-        <rdfs:subClassOf rdf:resource="&tea;SpicyFlavor"/>
-        <skos:definition>a flavor listed in the ASTA list that is reminiscent of cinnamon, the bark of one of several species in the Cinnamomum genus</skos:definition>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/CinnamonFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ASTASpiceFlavor"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SpicyFlavor"/>
         <dct:source>ASTA spice list (http://www.astaspice.org/download/9423/)</dct:source>
+        <rdfs:label xml:lang="en">cinnamon flavor</rdfs:label>
+        <skos:definition>a flavor listed in the ASTA list that is reminiscent of cinnamon, the bark of one of several species in the Cinnamomum genus</skos:definition>
     </owl:Class>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/CloveFlavor -->
 
-    <owl:Class rdf:about="&tea;CloveFlavor">
-        <rdfs:label xml:lang="en">clove flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;ASTASpiceFlavor"/>
-        <rdfs:subClassOf rdf:resource="&tea;SpicyFlavor"/>
-        <skos:definition>a flavor listed in the ASTA list that is reminiscent of clove, the flower buds of the tree Syzygium aromaticum</skos:definition>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/CloveFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ASTASpiceFlavor"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SpicyFlavor"/>
         <dct:source>ASTA spice list (http://www.astaspice.org/download/9423/)</dct:source>
+        <rdfs:label xml:lang="en">clove flavor</rdfs:label>
+        <skos:definition>a flavor listed in the ASTA list that is reminiscent of clove, the flower buds of the tree Syzygium aromaticum</skos:definition>
     </owl:Class>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/CompatibleBlend -->
 
-    <owl:Class rdf:about="&tea;CompatibleBlend">
-        <rdfs:label xml:lang="en">compatible blend</rdfs:label>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/CompatibleBlend">
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&tea;contains"/>
-                <owl:someValuesFrom rdf:resource="&tea;FlavorCompatibility"/>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/contains"/>
+                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/FlavorCompatibility"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&tea;Blend"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Blend"/>
+        <rdfs:label xml:lang="en">compatible blend</rdfs:label>
         <skos:definition>a blend of at least two drinks whose flavors are considered compatible</skos:definition>
     </owl:Class>
     
@@ -745,11 +741,11 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/CorianderSeedFlavor -->
 
-    <owl:Class rdf:about="&tea;CorianderSeedFlavor">
-        <rdfs:label xml:lang="en">coriander flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;ASTASpiceFlavor"/>
-        <rdfs:subClassOf rdf:resource="&tea;SpicyFlavor"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/CorianderSeedFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ASTASpiceFlavor"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SpicyFlavor"/>
         <dct:source>ASTA spice list (http://www.astaspice.org/download/9423/)</dct:source>
+        <rdfs:label xml:lang="en">coriander flavor</rdfs:label>
         <skos:definition>a flavor listed in the ASTA list that is reminiscent of coriander seed, actually the fruits of the plant Coriandrum sativum</skos:definition>
     </owl:Class>
     
@@ -757,11 +753,11 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/CuminSeedFlavor -->
 
-    <owl:Class rdf:about="&tea;CuminSeedFlavor">
-        <rdfs:label xml:lang="en">cumin seed flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;ASTASpiceFlavor"/>
-        <rdfs:subClassOf rdf:resource="&tea;SpicyFlavor"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/CuminSeedFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ASTASpiceFlavor"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SpicyFlavor"/>
         <dct:source>ASTA spice list (http://www.astaspice.org/download/9423/)</dct:source>
+        <rdfs:label xml:lang="en">cumin seed flavor</rdfs:label>
         <skos:definition>a flavor listed in the ASTA list that is reminiscent of cumin, the seeds of the plant Cuminum cyminum</skos:definition>
     </owl:Class>
     
@@ -769,8 +765,8 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Decaffeinated -->
 
-    <owl:Class rdf:about="&tea;Decaffeinated">
-        <rdfs:subClassOf rdf:resource="&tea;Caffeination"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Decaffeinated">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Caffeination"/>
         <skos:definition>Not containing caffeine</skos:definition>
     </owl:Class>
     
@@ -778,15 +774,15 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/DecaffeinatedBlend -->
 
-    <owl:Class rdf:about="&tea;DecaffeinatedBlend">
-        <rdfs:label xml:lang="en">decaffeinated blend</rdfs:label>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/DecaffeinatedBlend">
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&tea;contains"/>
-                <owl:allValuesFrom rdf:resource="&tea;DecaffeinatedSteepedDrink"/>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/contains"/>
+                <owl:allValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/DecaffeinatedSteepedDrink"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&tea;Blend"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Blend"/>
+        <rdfs:label xml:lang="en">decaffeinated blend</rdfs:label>
         <skos:definition>a blend which does not contain any steeped drinks that contain caffeine</skos:definition>
     </owl:Class>
     
@@ -794,20 +790,20 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/DecaffeinatedSteepedDrink -->
 
-    <owl:Class rdf:about="&tea;DecaffeinatedSteepedDrink">
-        <rdfs:label xml:lang="en">decaffeinated steeped drink</rdfs:label>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/DecaffeinatedSteepedDrink">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&tea;SteepedDrink"/>
+                    <rdf:Description rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SteepedDrink"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&tea;hasCaffeine"/>
-                        <owl:allValuesFrom rdf:resource="&tea;Decaffeinated"/>
+                        <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/hasCaffeine"/>
+                        <owl:allValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Decaffeinated"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&tea;SteepedDrink"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SteepedDrink"/>
+        <rdfs:label xml:lang="en">decaffeinated steeped drink</rdfs:label>
         <skos:definition>a steeped drink which does not contain caffeine</skos:definition>
     </owl:Class>
     
@@ -815,11 +811,11 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/DillSeedFlavor -->
 
-    <owl:Class rdf:about="&tea;DillSeedFlavor">
-        <rdfs:label xml:lang="en">dill seed flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;ASTASpiceFlavor"/>
-        <rdfs:subClassOf rdf:resource="&tea;SpicyFlavor"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/DillSeedFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ASTASpiceFlavor"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SpicyFlavor"/>
         <dct:source>ASTA spice list (http://www.astaspice.org/download/9423/)</dct:source>
+        <rdfs:label xml:lang="en">dill seed flavor</rdfs:label>
         <skos:definition>a flavor listed in the ASTA list that is reminiscent of dill seed, the seed of the plant Anethum graveolens</skos:definition>
     </owl:Class>
     
@@ -827,31 +823,32 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/DillWeedFlavor -->
 
-    <owl:Class rdf:about="&tea;DillWeedFlavor">
-        <rdfs:label xml:lang="en">dill weed flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;ASTASpiceFlavor"/>
-        <rdfs:subClassOf rdf:resource="&tea;HerbalFlavor"/>
-        <skos:definition>a flavor listed in the ASTA list that is reminiscent of dill weed, the leaves of the plant Anethum graveolens</skos:definition>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/DillWeedFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ASTASpiceFlavor"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/HerbalFlavor"/>
         <dct:source>ASTA spice list (http://www.astaspice.org/download/9423/)</dct:source>
+        <rdfs:label xml:lang="en">dill weed flavor</rdfs:label>
+        <skos:definition>a flavor listed in the ASTA list that is reminiscent of dill weed, the leaves of the plant Anethum graveolens</skos:definition>
     </owl:Class>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/DomainConcept -->
 
-    <owl:Class rdf:about="&tea;DomainConcept">
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/DomainConcept">
+        <owl:disjointWith rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ValuePartition"/>
+        <dct:source xml:lang="en">ISO 11179</dct:source>
         <rdfs:label xml:lang="en">domain concept</rdfs:label>
-        <owl:disjointWith rdf:resource="&tea;ValuePartition"/>
     </owl:Class>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/EarthyFlavor -->
 
-    <owl:Class rdf:about="&tea;EarthyFlavor">
-        <rdfs:label xml:lang="en">earthy flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;Flavor"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/EarthyFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Flavor"/>
         <dct:source>Adapted from Tea Cupping Standards (http://www.worldoftea.org/tea-cupping-standards/), Stone Leaf Tea&apos;s Tea Guru (http://www.stoneleaftea.com/tea-guru/), and The Australian Tea Maters&apos; Tea Flavour Wheel (https://australianteamasters.wordpress.com/2014/04/30/the-tea-flavour-wheel/)</dct:source>
+        <rdfs:label xml:lang="en">earthy flavor</rdfs:label>
         <skos:definition xml:lang="en">a flavor that is peaty or evocative of dirt or soil</skos:definition>
     </owl:Class>
     
@@ -859,34 +856,34 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/FennelSeedFlavor -->
 
-    <owl:Class rdf:about="&tea;FennelSeedFlavor">
-        <rdfs:label xml:lang="en">fennel seed flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;ASTASpiceFlavor"/>
-        <rdfs:subClassOf rdf:resource="&tea;SpicyFlavor"/>
-        <skos:definition>a flavor listed in the ASTA list that is reminiscent of fennel, the seed of the flowering plant Foeniculum vulgare</skos:definition>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/FennelSeedFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ASTASpiceFlavor"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SpicyFlavor"/>
         <dct:source>ASTA spice list (http://www.astaspice.org/download/9423/)</dct:source>
+        <rdfs:label xml:lang="en">fennel seed flavor</rdfs:label>
+        <skos:definition>a flavor listed in the ASTA list that is reminiscent of fennel, the seed of the flowering plant Foeniculum vulgare</skos:definition>
     </owl:Class>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/FenugreekSeedFlavor -->
 
-    <owl:Class rdf:about="&tea;FenugreekSeedFlavor">
-        <rdfs:label xml:lang="en">fenugreek seed flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;ASTASpiceFlavor"/>
-        <rdfs:subClassOf rdf:resource="&tea;SpicyFlavor"/>
-        <skos:definition>a flavor listed in the ASTA list that is reminiscent of fenugreek, the seeds of the plant Trigonella foenum-graecum</skos:definition>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/FenugreekSeedFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ASTASpiceFlavor"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SpicyFlavor"/>
         <dct:source>ASTA spice list (http://www.astaspice.org/download/9423/)</dct:source>
+        <rdfs:label xml:lang="en">fenugreek seed flavor</rdfs:label>
+        <skos:definition>a flavor listed in the ASTA list that is reminiscent of fenugreek, the seeds of the plant Trigonella foenum-graecum</skos:definition>
     </owl:Class>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Flavor -->
 
-    <owl:Class rdf:about="&tea;Flavor">
-        <rdfs:label xml:lang="en">flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;DomainConcept"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Flavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/DomainConcept"/>
         <dct:source xml:lang="en">Merriam-Webster online dictionary</dct:source>
+        <rdfs:label xml:lang="en">flavor</rdfs:label>
         <skos:definition xml:lang="en">the blend of taste and smell sensations evoked by a substance in the mouth</skos:definition>
     </owl:Class>
     
@@ -894,9 +891,9 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/FlavorCompatibility -->
 
-    <owl:Class rdf:about="&tea;FlavorCompatibility">
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/FlavorCompatibility">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/DomainConcept"/>
         <rdfs:label xml:lang="en">flavor compatibility</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;DomainConcept"/>
         <skos:definition xml:lang="en">Two or more flavors deemed to be compatible by some source with some strength</skos:definition>
     </owl:Class>
     
@@ -904,10 +901,10 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/FloralFlavor -->
 
-    <owl:Class rdf:about="&tea;FloralFlavor">
-        <rdfs:label xml:lang="en">floral flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;Flavor"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/FloralFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Flavor"/>
         <dct:source>Adapted from Tea Cupping Standards (http://www.worldoftea.org/tea-cupping-standards/), Stone Leaf Tea&apos;s Tea Guru (http://www.stoneleaftea.com/tea-guru/), and The Australian Tea Maters&apos; Tea Flavour Wheel (https://australianteamasters.wordpress.com/2014/04/30/the-tea-flavour-wheel/)</dct:source>
+        <rdfs:label xml:lang="en">floral flavor</rdfs:label>
         <skos:definition xml:lang="en">a flavor that is evocative of flowers</skos:definition>
     </owl:Class>
     
@@ -915,28 +912,28 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/FlowerPart -->
 
-    <owl:Class rdf:about="&tea;FlowerPart">
-        <rdfs:label xml:lang="en">flower part</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;PlantPart"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/FlowerPart">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/PlantPart"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&tea;brewsAt"/>
-                <owl:someValuesFrom rdf:resource="&tea;HighBrewingTemperature"/>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/brewsAt"/>
+                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/HighBrewingTemperature"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&tea;brewsAt"/>
-                <owl:someValuesFrom rdf:resource="&tea;LowBrewingTemperature"/>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/brewsAt"/>
+                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/LowBrewingTemperature"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&tea;brewsAt"/>
-                <owl:someValuesFrom rdf:resource="&tea;MediumBrewingTemperature"/>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/brewsAt"/>
+                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/MediumBrewingTemperature"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <dct:source>Adapted from Merriam-Webster online dictionary</dct:source>
+        <rdfs:label xml:lang="en">flower part</rdfs:label>
         <skos:definition>the flower of a plant, the reproductive structure of flowering plants</skos:definition>
     </owl:Class>
     
@@ -944,27 +941,27 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/FruitPart -->
 
-    <owl:Class rdf:about="&tea;FruitPart">
-        <rdfs:label xml:lang="en">fruit part</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;PlantPart"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/FruitPart">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/PlantPart"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&tea;brewsAt"/>
-                <owl:someValuesFrom rdf:resource="&tea;HighBrewingTemperature"/>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/brewsAt"/>
+                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/HighBrewingTemperature"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <skos:definition>the developed ovary of flowering plants</skos:definition>
         <dct:source>Adapted from Merriam-Webster online dictionary</dct:source>
+        <rdfs:label xml:lang="en">fruit part</rdfs:label>
+        <skos:definition>the developed ovary of flowering plants</skos:definition>
     </owl:Class>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/FruityFlavor -->
 
-    <owl:Class rdf:about="&tea;FruityFlavor">
-        <rdfs:label xml:lang="en">fruity flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;Flavor"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/FruityFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Flavor"/>
         <dct:source>Adapted from Tea Cupping Standards (http://www.worldoftea.org/tea-cupping-standards/), Stone Leaf Tea&apos;s Tea Guru (http://www.stoneleaftea.com/tea-guru/), and The Australian Tea Maters&apos; Tea Flavour Wheel (https://australianteamasters.wordpress.com/2014/04/30/the-tea-flavour-wheel/)</dct:source>
+        <rdfs:label xml:lang="en">fruity flavor</rdfs:label>
         <skos:definition xml:lang="en">a flavor that is evocative of fruit</skos:definition>
     </owl:Class>
     
@@ -972,11 +969,11 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/GalangalFlavor -->
 
-    <owl:Class rdf:about="&tea;GalangalFlavor">
-        <rdfs:label xml:lang="en">galangal flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;ASTASpiceFlavor"/>
-        <rdfs:subClassOf rdf:resource="&tea;SpicyFlavor"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/GalangalFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ASTASpiceFlavor"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SpicyFlavor"/>
         <dct:source>ASTA spice list (http://www.astaspice.org/download/9423/)</dct:source>
+        <rdfs:label xml:lang="en">galangal flavor</rdfs:label>
         <skos:definition>a flavor listed in the ASTA list that is reminiscent of galangal, the rhizome of one of several plants in the Zingiberaceae family</skos:definition>
     </owl:Class>
     
@@ -984,23 +981,35 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/GingerFlavor -->
 
-    <owl:Class rdf:about="&tea;GingerFlavor">
-        <rdfs:label xml:lang="en">ginger flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;ASTASpiceFlavor"/>
-        <rdfs:subClassOf rdf:resource="&tea;SpicyFlavor"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/GingerFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ASTASpiceFlavor"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SpicyFlavor"/>
         <dct:source>ASTA spice list (http://www.astaspice.org/download/9423/)</dct:source>
+        <rdfs:label xml:lang="en">ginger flavor</rdfs:label>
         <skos:definition>a flavor listed in the ASTA list that is reminiscent of ginger, the rhizome of the flowering plant Zingiber officinale</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/GoldenMonkeyTea -->
+
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/GoldenMonkeyTea">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/BlackTea"/>
+        <dct:source xml:lang="en">RateTea (http://ratetea.com/style/golden-monkey/97/)</dct:source>
+        <rdfs:label xml:lang="en">golden monkey tea</rdfs:label>
+        <skos:altLabel xml:lang="en">jin hou tea</skos:altLabel>
+        <skos:definition xml:lang="en">A black tea produced in the Fujian province of China, made with a high proportion of leaf buds (one leaf to one bud)</skos:definition>
     </owl:Class>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/GreenPeppercornFlavor -->
 
-    <owl:Class rdf:about="&tea;GreenPeppercornFlavor">
-        <rdfs:label xml:lang="en">green peppercorn flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;ASTASpiceFlavor"/>
-        <rdfs:subClassOf rdf:resource="&tea;SpicyFlavor"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/GreenPeppercornFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ASTASpiceFlavor"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SpicyFlavor"/>
         <dct:source>ASTA spice list (http://www.astaspice.org/download/9423/)</dct:source>
+        <rdfs:label xml:lang="en">green peppercorn flavor</rdfs:label>
         <skos:definition>a flavor listed in the ASTA list that is reminiscent of green pepper, the unripened seeds of the plant Piper nigrum that have been processed in a way that preserves their green color</skos:definition>
     </owl:Class>
     
@@ -1008,29 +1017,29 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/GreenTea -->
 
-    <owl:Class rdf:about="&tea;GreenTea">
-        <rdfs:label xml:lang="en">green tea</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;Tea"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/GreenTea">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Tea"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&tea;hasBrewingTemperature"/>
-                <owl:someValuesFrom rdf:resource="&tea;LowBrewingTemperature"/>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/hasBrewingTemperature"/>
+                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/LowBrewingTemperature"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <dct:source>Tea: The Drink that Changed the World</dct:source>
+        <rdfs:label xml:lang="en">green tea</rdfs:label>
         <skos:altLabel>緑茶</skos:altLabel>
         <skos:definition>Tea that has been withered, rolled, and dried, but is not oxidized</skos:definition>
-        <dct:source>Tea: The Drink that Changed the World</dct:source>
     </owl:Class>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Guayusa -->
 
-    <owl:Class rdf:about="&tea;Guayusa">
-        <rdfs:label xml:lang="en">guayusa</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;CaffeinatedSteepedDrink"/>
-        <rdfs:subClassOf rdf:resource="&tea;Tisane"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Guayusa">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/CaffeinatedSteepedDrink"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Tisane"/>
         <dct:source>http://runa.org/guayusa/</dct:source>
+        <rdfs:label xml:lang="en">guayusa</rdfs:label>
         <skos:definition>A steeped drink made from the leaves of Ilex guayusa, grown in South America. Contains caffeine.</skos:definition>
     </owl:Class>
     
@@ -1038,22 +1047,22 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/GyokurochaGreenTea -->
 
-    <owl:Class rdf:about="&tea;GyokurochaGreenTea">
-        <rdfs:label xml:lang="en">gyokurocha green tea</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;GreenTea"/>
-        <skos:definition>A green tea from Japan produced from steamed leaves that were shaded during growth</skos:definition>
-        <skos:altLabel>玉露茶</skos:altLabel>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/GyokurochaGreenTea">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/GreenTea"/>
         <dct:source>http://infohost.nmt.edu/~armiller/japanese/tea.htm</dct:source>
+        <rdfs:label xml:lang="en">gyokurocha green tea</rdfs:label>
+        <skos:altLabel>玉露茶</skos:altLabel>
+        <skos:definition>A green tea from Japan produced from steamed leaves that were shaded during growth</skos:definition>
     </owl:Class>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/HerbalFlavor -->
 
-    <owl:Class rdf:about="&tea;HerbalFlavor">
-        <rdfs:label xml:lang="en">herbal flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;Flavor"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/HerbalFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Flavor"/>
         <dct:source>Adapted from Foy Spicer, Department of Horticulture, Iowa State University, in Horticulture and Home Pest News, IC-489(21) -- August 22, 2003</dct:source>
+        <rdfs:label xml:lang="en">herbal flavor</rdfs:label>
         <skos:definition xml:lang="en">a flavor that is evocative of culinary/medicinal herbs - leaves of plants used for savory or medicinal purposes</skos:definition>
     </owl:Class>
     
@@ -1061,12 +1070,12 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/HighBrewingTemperature -->
 
-    <owl:Class rdf:about="&tea;HighBrewingTemperature">
-        <rdfs:label xml:lang="en">high brewing temperature</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;BrewingTemperature"/>
-        <owl:disjointWith rdf:resource="&tea;LowBrewingTemperature"/>
-        <owl:disjointWith rdf:resource="&tea;MediumBrewingTemperature"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/HighBrewingTemperature">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/BrewingTemperature"/>
+        <owl:disjointWith rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/LowBrewingTemperature"/>
+        <owl:disjointWith rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/MediumBrewingTemperature"/>
         <dct:source>http://www.silkroadteas.com/how-to-brew-loose-leaf-tea-brewing-instructions/</dct:source>
+        <rdfs:label xml:lang="en">high brewing temperature</rdfs:label>
         <skos:definition>205~212°F or 96~100°C</skos:definition>
     </owl:Class>
     
@@ -1074,11 +1083,11 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/HorseradishFlavor -->
 
-    <owl:Class rdf:about="&tea;HorseradishFlavor">
-        <rdfs:label xml:lang="en">horseradish flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;ASTASpiceFlavor"/>
-        <rdfs:subClassOf rdf:resource="&tea;SpicyFlavor"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/HorseradishFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ASTASpiceFlavor"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SpicyFlavor"/>
         <dct:source>ASTA spice list (http://www.astaspice.org/download/9423/)</dct:source>
+        <rdfs:label xml:lang="en">horseradish flavor</rdfs:label>
         <skos:definition>a flavor listed in the ASTA list that is reminiscent of horseradish, the root of the plant Armoracia rusticana</skos:definition>
     </owl:Class>
     
@@ -1086,47 +1095,59 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/HoujichaGreenTea -->
 
-    <owl:Class rdf:about="&tea;HoujichaGreenTea">
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/HoujichaGreenTea">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/GreenTea"/>
+        <dct:source>http://infohost.nmt.edu/~armiller/japanese/tea.htm</dct:source>
         <rdfs:label xml:lang="en">houjicha green tea</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;GreenTea"/>
         <skos:altLabel>ほうじ茶</skos:altLabel>
         <skos:definition>A green tea from Japan produced from unshaded leaves that are roasted rather than steamed</skos:definition>
-        <dct:source>http://infohost.nmt.edu/~armiller/japanese/tea.htm</dct:source>
     </owl:Class>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/JuniperFlavor -->
 
-    <owl:Class rdf:about="&tea;JuniperFlavor">
-        <rdfs:label xml:lang="en">juniper flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;ASTASpiceFlavor"/>
-        <rdfs:subClassOf rdf:resource="&tea;SpicyFlavor"/>
-        <skos:definition>a flavor listed in the ASTA list that is reminiscent of juniper berries, from the trees in the genus Juniperus</skos:definition>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/JuniperFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ASTASpiceFlavor"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SpicyFlavor"/>
         <dct:source>ASTA spice list (http://www.astaspice.org/download/9423/)</dct:source>
+        <rdfs:label xml:lang="en">juniper flavor</rdfs:label>
+        <skos:definition>a flavor listed in the ASTA list that is reminiscent of juniper berries, from the trees in the genus Juniperus</skos:definition>
     </owl:Class>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/KabusechaGreenTea -->
 
-    <owl:Class rdf:about="&tea;KabusechaGreenTea">
-        <rdfs:label xml:lang="en">kabusecha green tea</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;GreenTea"/>
-        <skos:definition>A green tea from Japan produced from steamed leaves that were shaded during part of the last part of growth before harvest</skos:definition>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/KabusechaGreenTea">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/GreenTea"/>
         <dct:source>http://infohost.nmt.edu/~armiller/japanese/tea.htm</dct:source>
+        <rdfs:label xml:lang="en">kabusecha green tea</rdfs:label>
         <skos:altLabel>かぶせ茶</skos:altLabel>
+        <skos:definition>A green tea from Japan produced from steamed leaves that were shaded during part of the last part of growth before harvest</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/LapsangSouchongTea -->
+
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/LapsangSouchongTea">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/BlackTea"/>
+        <dct:description xml:lang="en">A black tea produced in the Fujian province of China or in Taiwan, characterized by being dried over pine fires and thus flavored by the smoke</dct:description>
+        <dct:source xml:lang="en">RateTea (http://ratetea.com/style/lapsang-souchong/35/)</dct:source>
+        <rdfs:label xml:lang="en">lapsang souchong tea</rdfs:label>
+        <skos:altLabel>正山小种</skos:altLabel>
     </owl:Class>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/LavenderFlavor -->
 
-    <owl:Class rdf:about="&tea;LavenderFlavor">
-        <rdfs:label xml:lang="en">lavender flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;ASTASpiceFlavor"/>
-        <rdfs:subClassOf rdf:resource="&tea;FloralFlavor"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/LavenderFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ASTASpiceFlavor"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/FloralFlavor"/>
         <dct:source>ASTA spice list (http://www.astaspice.org/download/9423/)</dct:source>
+        <rdfs:label xml:lang="en">lavender flavor</rdfs:label>
         <skos:definition>a flavor listed in the ASTA list that is reminiscent of lavender, the flowers of the plant Lavandula angustifolia</skos:definition>
     </owl:Class>
     
@@ -1134,77 +1155,77 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/LeafPart -->
 
-    <owl:Class rdf:about="&tea;LeafPart">
-        <rdfs:label xml:lang="en">leaf part</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;PlantPart"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/LeafPart">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/PlantPart"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&tea;brewsAt"/>
-                <owl:someValuesFrom rdf:resource="&tea;MediumBrewingTemperature"/>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/brewsAt"/>
+                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/HighBrewingTemperature"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&tea;brewsAt"/>
-                <owl:someValuesFrom rdf:resource="&tea;HighBrewingTemperature"/>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/brewsAt"/>
+                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/LowBrewingTemperature"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&tea;brewsAt"/>
-                <owl:someValuesFrom rdf:resource="&tea;LowBrewingTemperature"/>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/brewsAt"/>
+                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/MediumBrewingTemperature"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <skos:definition>the structure used by a plant to perform photosynthesis</skos:definition>
         <dct:source>Adapted from Merriam-Webster online dictionary</dct:source>
+        <rdfs:label xml:lang="en">leaf part</rdfs:label>
+        <skos:definition>the structure used by a plant to perform photosynthesis</skos:definition>
     </owl:Class>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/LemonBalmFlavor -->
 
-    <owl:Class rdf:about="&tea;LemonBalmFlavor">
-        <rdfs:label xml:lang="en">lemon balm flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;ASTASpiceFlavor"/>
-        <rdfs:subClassOf rdf:resource="&tea;HerbalFlavor"/>
-        <skos:definition>a flavor listed in the ASTA list that is reminiscent of lemon balm, the leaves of the plant Melissa officinalis</skos:definition>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/LemonBalmFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ASTASpiceFlavor"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/HerbalFlavor"/>
         <dct:source>ASTA spice list (http://www.astaspice.org/download/9423/)</dct:source>
+        <rdfs:label xml:lang="en">lemon balm flavor</rdfs:label>
+        <skos:definition>a flavor listed in the ASTA list that is reminiscent of lemon balm, the leaves of the plant Melissa officinalis</skos:definition>
     </owl:Class>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/LowBrewingTemperature -->
 
-    <owl:Class rdf:about="&tea;LowBrewingTemperature">
-        <rdfs:label xml:lang="en">low brewing temperature</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;BrewingTemperature"/>
-        <owl:disjointWith rdf:resource="&tea;MediumBrewingTemperature"/>
-        <skos:definition>160~185°F or 71~85°C</skos:definition>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/LowBrewingTemperature">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/BrewingTemperature"/>
+        <owl:disjointWith rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/MediumBrewingTemperature"/>
         <dct:source>http://www.silkroadteas.com/how-to-brew-loose-leaf-tea-brewing-instructions/</dct:source>
+        <rdfs:label xml:lang="en">low brewing temperature</rdfs:label>
+        <skos:definition>160~185°F or 71~85°C</skos:definition>
     </owl:Class>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/MacchaGreenTea -->
 
-    <owl:Class rdf:about="&tea;MacchaGreenTea">
-        <rdfs:label xml:lang="en">maccha green tea</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;GreenTea"/>
-        <skos:definition>A green tea from Japan produced from steamed leaves that were shaded during growth, then powdered after drying.</skos:definition>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/MacchaGreenTea">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/GreenTea"/>
         <dct:source>http://infohost.nmt.edu/~armiller/japanese/tea.htm</dct:source>
+        <rdfs:label xml:lang="en">maccha green tea</rdfs:label>
         <skos:altLabel xml:lang="en">matcha green tea</skos:altLabel>
         <skos:altLabel>抹茶</skos:altLabel>
+        <skos:definition>A green tea from Japan produced from steamed leaves that were shaded during growth, then powdered after drying.</skos:definition>
     </owl:Class>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/MaceFlavor -->
 
-    <owl:Class rdf:about="&tea;MaceFlavor">
-        <rdfs:label xml:lang="en">mace flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;ASTASpiceFlavor"/>
-        <rdfs:subClassOf rdf:resource="&tea;SpicyFlavor"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/MaceFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ASTASpiceFlavor"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SpicyFlavor"/>
         <dct:source>ASTA spice list (http://www.astaspice.org/download/9423/)</dct:source>
+        <rdfs:label xml:lang="en">mace flavor</rdfs:label>
         <skos:definition>a flavor listed in the ASTA list that is reminiscent of mace, the dried covering or aril of the nutmeg seed, in one of several species in the genus Myristica</skos:definition>
     </owl:Class>
     
@@ -1212,22 +1233,22 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/MajoramLeafFlavor -->
 
-    <owl:Class rdf:about="&tea;MajoramLeafFlavor">
-        <rdfs:label xml:lang="en">majoram leaf flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;ASTASpiceFlavor"/>
-        <rdfs:subClassOf rdf:resource="&tea;HerbalFlavor"/>
-        <skos:definition>a flavor listed in the ASTA list that is reminiscent of majorum, the leaves of the herb Origanum majorana</skos:definition>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/MajoramLeafFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ASTASpiceFlavor"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/HerbalFlavor"/>
         <dct:source>ASTA spice list (http://www.astaspice.org/download/9423/)</dct:source>
+        <rdfs:label xml:lang="en">majoram leaf flavor</rdfs:label>
+        <skos:definition>a flavor listed in the ASTA list that is reminiscent of majorum, the leaves of the herb Origanum majorana</skos:definition>
     </owl:Class>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/MarineFlavor -->
 
-    <owl:Class rdf:about="&tea;MarineFlavor">
-        <rdfs:label xml:lang="en">marine flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;Flavor"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/MarineFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Flavor"/>
         <dct:source>Adapted from Tea Cupping Standards (http://www.worldoftea.org/tea-cupping-standards/), Stone Leaf Tea&apos;s Tea Guru (http://www.stoneleaftea.com/tea-guru/), and The Australian Tea Maters&apos; Tea Flavour Wheel (https://australianteamasters.wordpress.com/2014/04/30/the-tea-flavour-wheel/)</dct:source>
+        <rdfs:label xml:lang="en">marine flavor</rdfs:label>
         <skos:definition xml:lang="en">a flavor that is salty, fishy, or evocative of the sea</skos:definition>
     </owl:Class>
     
@@ -1235,28 +1256,28 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/MediumBrewingTemperature -->
 
-    <owl:Class rdf:about="&tea;MediumBrewingTemperature">
-        <rdfs:label xml:lang="en">medium brewing temperature</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;BrewingTemperature"/>
-        <skos:definition>185~205°F or 85~96°C</skos:definition>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/MediumBrewingTemperature">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/BrewingTemperature"/>
         <dct:source>http://www.silkroadteas.com/how-to-brew-loose-leaf-tea-brewing-instructions/</dct:source>
+        <rdfs:label xml:lang="en">medium brewing temperature</rdfs:label>
+        <skos:definition>185~205°F or 85~96°C</skos:definition>
     </owl:Class>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/MintTea -->
 
-    <owl:Class rdf:about="&tea;MintTea">
-        <rdfs:label xml:lang="en">mint tea</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;DecaffeinatedSteepedDrink"/>
-        <rdfs:subClassOf rdf:resource="&tea;Tisane"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/MintTea">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/DecaffeinatedSteepedDrink"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Tisane"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&tea;madeFromPart"/>
-                <owl:someValuesFrom rdf:resource="&tea;LeafPart"/>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/madeFromPart"/>
+                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/LeafPart"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <dct:source>Wikipedia</dct:source>
+        <rdfs:label xml:lang="en">mint tea</rdfs:label>
         <skos:definition>a tisane made from the leaves of plants in the Mentha family</skos:definition>
     </owl:Class>
     
@@ -1264,11 +1285,11 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/MustardSeedFlavor -->
 
-    <owl:Class rdf:about="&tea;MustardSeedFlavor">
-        <rdfs:label xml:lang="en">mustard seed flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;ASTASpiceFlavor"/>
-        <rdfs:subClassOf rdf:resource="&tea;SpicyFlavor"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/MustardSeedFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ASTASpiceFlavor"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SpicyFlavor"/>
         <dct:source>ASTA spice list (http://www.astaspice.org/download/9423/)</dct:source>
+        <rdfs:label xml:lang="en">mustard seed flavor</rdfs:label>
         <skos:definition>a flavor listed in the ASTA list that is reminiscent of mustard seed, the seed of either Brassica nigra, Brassica juncea, or Brassica alba/Sinapis alba</skos:definition>
     </owl:Class>
     
@@ -1276,22 +1297,22 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/NutmegFlavor -->
 
-    <owl:Class rdf:about="&tea;NutmegFlavor">
-        <rdfs:label xml:lang="en">nutmeg flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;ASTASpiceFlavor"/>
-        <rdfs:subClassOf rdf:resource="&tea;SpicyFlavor"/>
-        <skos:definition>a flavor listed in the ASTA list that is reminiscent of nutmeg, the seed of the nutmeg tree, from one of several species in the genus Myristica</skos:definition>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/NutmegFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ASTASpiceFlavor"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SpicyFlavor"/>
         <dct:source>ASTA spice list (http://www.astaspice.org/download/9423/)</dct:source>
+        <rdfs:label xml:lang="en">nutmeg flavor</rdfs:label>
+        <skos:definition>a flavor listed in the ASTA list that is reminiscent of nutmeg, the seed of the nutmeg tree, from one of several species in the genus Myristica</skos:definition>
     </owl:Class>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/NuttyFlavor -->
 
-    <owl:Class rdf:about="&tea;NuttyFlavor">
-        <rdfs:label xml:lang="en">nutty flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;Flavor"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/NuttyFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Flavor"/>
         <dct:source>Adapted from Tea Cupping Standards (http://www.worldoftea.org/tea-cupping-standards/), Stone Leaf Tea&apos;s Tea Guru (http://www.stoneleaftea.com/tea-guru/), and The Australian Tea Maters&apos; Tea Flavour Wheel (https://australianteamasters.wordpress.com/2014/04/30/the-tea-flavour-wheel/)</dct:source>
+        <rdfs:label xml:lang="en">nutty flavor</rdfs:label>
         <skos:definition xml:lang="en">a flavor that is evocative of nuts</skos:definition>
     </owl:Class>
     
@@ -1299,23 +1320,23 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/OolongTea -->
 
-    <owl:Class rdf:about="&tea;OolongTea">
-        <rdfs:label xml:lang="en">oolong tea</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;Tea"/>
-        <skos:definition>Tea that has been withered, rolled, oxidized, and dried; partially but not completely oxidized</skos:definition>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/OolongTea">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Tea"/>
         <dct:source>Tea: The Drink that Changed the World</dct:source>
+        <rdfs:label xml:lang="en">oolong tea</rdfs:label>
         <skos:altLabel>烏龍茶</skos:altLabel>
+        <skos:definition>Tea that has been withered, rolled, oxidized, and dried; partially but not completely oxidized</skos:definition>
     </owl:Class>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/OreganoLeafFlavor -->
 
-    <owl:Class rdf:about="&tea;OreganoLeafFlavor">
-        <rdfs:label xml:lang="en">oregano flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;ASTASpiceFlavor"/>
-        <rdfs:subClassOf rdf:resource="&tea;HerbalFlavor"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/OreganoLeafFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ASTASpiceFlavor"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/HerbalFlavor"/>
         <dct:source>ASTA spice list (http://www.astaspice.org/download/9423/)</dct:source>
+        <rdfs:label xml:lang="en">oregano flavor</rdfs:label>
         <skos:definition>a flavor listed in the ASTA list that is reminiscent of oregano, the leaves of Origanum vulgare</skos:definition>
     </owl:Class>
     
@@ -1323,11 +1344,11 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/PaprikaFlavor -->
 
-    <owl:Class rdf:about="&tea;PaprikaFlavor">
-        <rdfs:label xml:lang="en">paprika flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;ASTASpiceFlavor"/>
-        <rdfs:subClassOf rdf:resource="&tea;SpicyFlavor"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/PaprikaFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ASTASpiceFlavor"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SpicyFlavor"/>
         <dct:source>ASTA spice list (http://www.astaspice.org/download/9423/)</dct:source>
+        <rdfs:label xml:lang="en">paprika flavor</rdfs:label>
         <skos:definition>a flavor listed in the ASTA list that is reminiscent of paprika, the dried fruit of the plant Capsicum annuum</skos:definition>
     </owl:Class>
     
@@ -1335,11 +1356,11 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ParsleyFlavor -->
 
-    <owl:Class rdf:about="&tea;ParsleyFlavor">
-        <rdfs:label xml:lang="en">parsley flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;ASTASpiceFlavor"/>
-        <rdfs:subClassOf rdf:resource="&tea;HerbalFlavor"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ParsleyFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ASTASpiceFlavor"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/HerbalFlavor"/>
         <dct:source>ASTA spice list (http://www.astaspice.org/download/9423/)</dct:source>
+        <rdfs:label xml:lang="en">parsley flavor</rdfs:label>
         <skos:definition>a flavor listed in the ASTA list that is reminiscent of parsley, the leaves of the plant Petroselinum crispum</skos:definition>
     </owl:Class>
     
@@ -1347,11 +1368,11 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/PeppermintLeafFlavor -->
 
-    <owl:Class rdf:about="&tea;PeppermintLeafFlavor">
-        <rdfs:label xml:lang="en">pepperment leaf flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;ASTASpiceFlavor"/>
-        <rdfs:subClassOf rdf:resource="&tea;HerbalFlavor"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/PeppermintLeafFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ASTASpiceFlavor"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/HerbalFlavor"/>
         <dct:source>ASTA spice list (http://www.astaspice.org/download/9423/)</dct:source>
+        <rdfs:label xml:lang="en">pepperment leaf flavor</rdfs:label>
         <skos:definition>a flavor listed in the ASTA list that is reminiscent of peppermint, the leaves of Mentha x piperita, a hybrid between Mentha aquatica and Mentha spicata</skos:definition>
     </owl:Class>
     
@@ -1359,11 +1380,11 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/PinkPeppercornFlavor -->
 
-    <owl:Class rdf:about="&tea;PinkPeppercornFlavor">
-        <rdfs:label xml:lang="en">pink peppercorn flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;ASTASpiceFlavor"/>
-        <rdfs:subClassOf rdf:resource="&tea;SpicyFlavor"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/PinkPeppercornFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ASTASpiceFlavor"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SpicyFlavor"/>
         <dct:source>ASTA spice list (http://www.astaspice.org/download/9423/)</dct:source>
+        <rdfs:label xml:lang="en">pink peppercorn flavor</rdfs:label>
         <skos:definition>a flavor listed in the ASTA list that is reminiscent of pink peppercorn, the dried berry of the shrub Schinus molle</skos:definition>
     </owl:Class>
     
@@ -1371,9 +1392,9 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/PlantPart -->
 
-    <owl:Class rdf:about="&tea;PlantPart">
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/PlantPart">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/DomainConcept"/>
         <rdfs:label xml:lang="en">plant part</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;DomainConcept"/>
         <skos:definition xml:lang="en">a part of a plant, defined culinarily, not botanically</skos:definition>
     </owl:Class>
     
@@ -1381,22 +1402,22 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/PoppySeedFlavor -->
 
-    <owl:Class rdf:about="&tea;PoppySeedFlavor">
-        <rdfs:label xml:lang="en">poppy seed flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;ASTASpiceFlavor"/>
-        <rdfs:subClassOf rdf:resource="&tea;SpicyFlavor"/>
-        <skos:definition>a flavor listed in the ASTA list that is reminiscent of poppy seed, the seed of the flower Papaver somniferum</skos:definition>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/PoppySeedFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ASTASpiceFlavor"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SpicyFlavor"/>
         <dct:source>ASTA spice list (http://www.astaspice.org/download/9423/)</dct:source>
+        <rdfs:label xml:lang="en">poppy seed flavor</rdfs:label>
+        <skos:definition>a flavor listed in the ASTA list that is reminiscent of poppy seed, the seed of the flower Papaver somniferum</skos:definition>
     </owl:Class>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Pu-ErhTea -->
 
-    <owl:Class rdf:about="&tea;Pu-ErhTea">
-        <rdfs:label xml:lang="en">pu-erh tea</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;Tea"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Pu-ErhTea">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Tea"/>
         <dct:source>Tea: The Drink that Changed the World</dct:source>
+        <rdfs:label xml:lang="en">pu-erh tea</rdfs:label>
         <skos:altLabel>普洱茶</skos:altLabel>
         <skos:definition>Tea that is fermented, made from large tea leaves from older plants</skos:definition>
     </owl:Class>
@@ -1405,58 +1426,58 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/RipePu-ErhTea -->
 
-    <owl:Class rdf:about="&tea;RipePu-ErhTea">
-        <rdfs:label xml:lang="en">ripe pu-erh tea</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;Pu-ErhTea"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/RipePu-ErhTea">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Pu-ErhTea"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&tea;hasBrewingTemperature"/>
-                <owl:someValuesFrom rdf:resource="&tea;HighBrewingTemperature"/>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/hasBrewingTemperature"/>
+                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/HighBrewingTemperature"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <skos:definition>A pu-erh tea that is piled and left to ferment after processing</skos:definition>
         <dct:source>http://www.seriouseats.com/2015/08/what-is-puerh-tea-where-to-buy.html</dct:source>
+        <rdfs:label xml:lang="en">ripe pu-erh tea</rdfs:label>
+        <skos:definition>A pu-erh tea that is piled and left to ferment after processing</skos:definition>
     </owl:Class>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/RooibosTea -->
 
-    <owl:Class rdf:about="&tea;RooibosTea">
-        <rdfs:label xml:lang="en">rooibos tea</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;DecaffeinatedSteepedDrink"/>
-        <rdfs:subClassOf rdf:resource="&tea;Tisane"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/RooibosTea">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/DecaffeinatedSteepedDrink"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Tisane"/>
         <dct:source>Tea: The Drink that Changed the World</dct:source>
-        <skos:definition>A steeped drink made from the leaves of Aspalanthus linearis, grown in South Africa. Contains no caffeine.</skos:definition>
+        <rdfs:label xml:lang="en">rooibos tea</rdfs:label>
         <skos:altLabel xml:lang="en">red tea</skos:altLabel>
+        <skos:definition>A steeped drink made from the leaves of Aspalanthus linearis, grown in South Africa. Contains no caffeine.</skos:definition>
     </owl:Class>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/RootPart -->
 
-    <owl:Class rdf:about="&tea;RootPart">
-        <rdfs:label xml:lang="en">root part</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;PlantPart"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/RootPart">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/PlantPart"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&tea;brewsAt"/>
-                <owl:someValuesFrom rdf:resource="&tea;HighBrewingTemperature"/>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/brewsAt"/>
+                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/HighBrewingTemperature"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <skos:definition>an underground part of a plant, used for gathering nutrients, storing nutrients, or for supporting the plant</skos:definition>
         <dct:source>Adapted from Merriam-Webster online dictionary</dct:source>
+        <rdfs:label xml:lang="en">root part</rdfs:label>
+        <skos:definition>an underground part of a plant, used for gathering nutrients, storing nutrients, or for supporting the plant</skos:definition>
     </owl:Class>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/RosemaryFlavor -->
 
-    <owl:Class rdf:about="&tea;RosemaryFlavor">
-        <rdfs:label xml:lang="en">rosemary flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;ASTASpiceFlavor"/>
-        <rdfs:subClassOf rdf:resource="&tea;HerbalFlavor"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/RosemaryFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ASTASpiceFlavor"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/HerbalFlavor"/>
         <dct:source>ASTA spice list (http://www.astaspice.org/download/9423/)</dct:source>
+        <rdfs:label xml:lang="en">rosemary flavor</rdfs:label>
         <skos:definition>a flavor listed in the ASTA list that is reminiscent of rosemary, the leaves of the herb Rosmarinus officinalis</skos:definition>
     </owl:Class>
     
@@ -1464,23 +1485,23 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SageFlavor -->
 
-    <owl:Class rdf:about="&tea;SageFlavor">
-        <rdfs:label xml:lang="en">sage flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;ASTASpiceFlavor"/>
-        <rdfs:subClassOf rdf:resource="&tea;HerbalFlavor"/>
-        <skos:definition>a flavor listed in the ASTA list that is reminiscent of sage, the leaves of the plant Salvia officinalis</skos:definition>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SageFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ASTASpiceFlavor"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/HerbalFlavor"/>
         <dct:source>ASTA spice list (http://www.astaspice.org/download/9423/)</dct:source>
+        <rdfs:label xml:lang="en">sage flavor</rdfs:label>
+        <skos:definition>a flavor listed in the ASTA list that is reminiscent of sage, the leaves of the plant Salvia officinalis</skos:definition>
     </owl:Class>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SavoryLeafFlavor -->
 
-    <owl:Class rdf:about="&tea;SavoryLeafFlavor">
-        <rdfs:label xml:lang="en">savory leaf flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;ASTASpiceFlavor"/>
-        <rdfs:subClassOf rdf:resource="&tea;HerbalFlavor"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SavoryLeafFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ASTASpiceFlavor"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/HerbalFlavor"/>
         <dct:source>ASTA spice list (http://www.astaspice.org/download/9423/)</dct:source>
+        <rdfs:label xml:lang="en">savory leaf flavor</rdfs:label>
         <skos:definition>a flavor listed in the ASTA list that is reminiscent of savory, the leaves of the plant Satureja hortensis or Satureja montana</skos:definition>
     </owl:Class>
     
@@ -1488,50 +1509,50 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SeedPart -->
 
-    <owl:Class rdf:about="&tea;SeedPart">
-        <rdfs:label xml:lang="en">seed part</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;PlantPart"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SeedPart">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/PlantPart"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&tea;brewsAt"/>
-                <owl:someValuesFrom rdf:resource="&tea;HighBrewingTemperature"/>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/brewsAt"/>
+                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/HighBrewingTemperature"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <skos:definition>the developed, fertilized part of a flowering plant</skos:definition>
         <dct:source>Adapted from Merriam-Webster online dictionary</dct:source>
+        <rdfs:label xml:lang="en">seed part</rdfs:label>
+        <skos:definition>the developed, fertilized part of a flowering plant</skos:definition>
     </owl:Class>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SenchaGreenTea -->
 
-    <owl:Class rdf:about="&tea;SenchaGreenTea">
-        <rdfs:label xml:lang="en">sencha green tea</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;GreenTea"/>
-        <skos:definition>A green tea from Japan produced from unshaded steamed leaves picked during spring</skos:definition>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SenchaGreenTea">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/GreenTea"/>
         <dct:source>http://infohost.nmt.edu/~armiller/japanese/tea.htm</dct:source>
+        <rdfs:label xml:lang="en">sencha green tea</rdfs:label>
         <skos:altLabel>煎茶</skos:altLabel>
+        <skos:definition>A green tea from Japan produced from unshaded steamed leaves picked during spring</skos:definition>
     </owl:Class>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SesameSeedFlavor -->
 
-    <owl:Class rdf:about="&tea;SesameSeedFlavor">
-        <rdfs:label xml:lang="en">sesame seed flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;ASTASpiceFlavor"/>
-        <rdfs:subClassOf rdf:resource="&tea;SpicyFlavor"/>
-        <skos:definition>a flavor listed in the ASTA list that is reminiscent of sesame seed, the seed of the plant Sesamum indicum</skos:definition>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SesameSeedFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ASTASpiceFlavor"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SpicyFlavor"/>
         <dct:source>ASTA spice list (http://www.astaspice.org/download/9423/)</dct:source>
+        <rdfs:label xml:lang="en">sesame seed flavor</rdfs:label>
+        <skos:definition>a flavor listed in the ASTA list that is reminiscent of sesame seed, the seed of the plant Sesamum indicum</skos:definition>
     </owl:Class>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SourFlavor -->
 
-    <owl:Class rdf:about="&tea;SourFlavor">
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SourFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Flavor"/>
         <rdfs:label xml:lang="en">sour flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;Flavor"/>
         <skos:definition xml:lang="en">a flavor that is tart or acidic</skos:definition>
     </owl:Class>
     
@@ -1539,11 +1560,11 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SpearmintFlavor -->
 
-    <owl:Class rdf:about="&tea;SpearmintFlavor">
-        <rdfs:label xml:lang="en">spearmint flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;ASTASpiceFlavor"/>
-        <rdfs:subClassOf rdf:resource="&tea;HerbalFlavor"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SpearmintFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ASTASpiceFlavor"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/HerbalFlavor"/>
         <dct:source>ASTA spice list (http://www.astaspice.org/download/9423/)</dct:source>
+        <rdfs:label xml:lang="en">spearmint flavor</rdfs:label>
         <skos:definition>a flavor listed in the ASTA list that is reminiscent of spearmint, the leaves of the plant Mentha spicata</skos:definition>
     </owl:Class>
     
@@ -1551,10 +1572,10 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SpicyFlavor -->
 
-    <owl:Class rdf:about="&tea;SpicyFlavor">
-        <rdfs:label xml:lang="en">spicy flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;Flavor"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SpicyFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Flavor"/>
         <dct:source>Adapted from Foy Spicer, Department of Horticulture, Iowa State University, in Horticulture and Home Pest News, IC-489(21) -- August 22, 2003</dct:source>
+        <rdfs:label xml:lang="en">spicy flavor</rdfs:label>
         <skos:definition xml:lang="en">a flavor that is evocative of culinary/medicinal spices - aromatic substances obtained from roots, flowers, fruits, seeds or bark; not necessarily capsaicin</skos:definition>
     </owl:Class>
     
@@ -1562,36 +1583,36 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/StarAniseFlavor -->
 
-    <owl:Class rdf:about="&tea;StarAniseFlavor">
-        <rdfs:label xml:lang="en">star anise flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;ASTASpiceFlavor"/>
-        <rdfs:subClassOf rdf:resource="&tea;SpicyFlavor"/>
-        <skos:definition>a flavor listed in the ASTA list that is reminiscent of star anise, the fruit of the tree Illicium verum</skos:definition>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/StarAniseFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ASTASpiceFlavor"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SpicyFlavor"/>
         <dct:source>ASTA spice list (http://www.astaspice.org/download/9423/)</dct:source>
+        <rdfs:label xml:lang="en">star anise flavor</rdfs:label>
+        <skos:definition>a flavor listed in the ASTA list that is reminiscent of star anise, the fruit of the tree Illicium verum</skos:definition>
     </owl:Class>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SteepedDrink -->
 
-    <owl:Class rdf:about="&tea;SteepedDrink">
-        <rdfs:label xml:lang="en">steeped drink</rdfs:label>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SteepedDrink">
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&tea;hasFlavor"/>
-                <owl:onClass rdf:resource="&tea;Flavor"/>
-                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/hasBrewingTemperature"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/BrewingTemperature"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&tea;hasBrewingTemperature"/>
-                <owl:onClass rdf:resource="&tea;BrewingTemperature"/>
-                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/hasFlavor"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Flavor"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&tea;DomainConcept"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/DomainConcept"/>
         <dct:source>Adapted from Merriam-Webster: http://www.merriam-webster.com/dictionary/steep (sense 3)</dct:source>
+        <rdfs:label xml:lang="en">steeped drink</rdfs:label>
         <skos:definition xml:lang="en">A beverage that has been prepared by allowing ingredients to soak in water at a temperature under the boiling point.</skos:definition>
     </owl:Class>
     
@@ -1599,10 +1620,10 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SweetFlavor -->
 
-    <owl:Class rdf:about="&tea;SweetFlavor">
-        <rdfs:label xml:lang="en">sweet flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;Flavor"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SweetFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Flavor"/>
         <dct:source>Adapted from Tea Cupping Standards (http://www.worldoftea.org/tea-cupping-standards/), Stone Leaf Tea&apos;s Tea Guru (http://www.stoneleaftea.com/tea-guru/), and The Australian Tea Maters&apos; Tea Flavour Wheel (https://australianteamasters.wordpress.com/2014/04/30/the-tea-flavour-wheel/)</dct:source>
+        <rdfs:label xml:lang="en">sweet flavor</rdfs:label>
         <skos:definition xml:lang="en">a flavor that is sugary or syrupy</skos:definition>
     </owl:Class>
     
@@ -1610,23 +1631,23 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/TarragonFlavor -->
 
-    <owl:Class rdf:about="&tea;TarragonFlavor">
-        <rdfs:label xml:lang="en">tarragon flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;ASTASpiceFlavor"/>
-        <rdfs:subClassOf rdf:resource="&tea;HerbalFlavor"/>
-        <skos:definition>a flavor listed in the ASTA list that is reminiscent of tarragon, the leaves of the herb Artemisia dracunculus</skos:definition>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/TarragonFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ASTASpiceFlavor"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/HerbalFlavor"/>
         <dct:source>ASTA spice list (http://www.astaspice.org/download/9423/)</dct:source>
+        <rdfs:label xml:lang="en">tarragon flavor</rdfs:label>
+        <skos:definition>a flavor listed in the ASTA list that is reminiscent of tarragon, the leaves of the herb Artemisia dracunculus</skos:definition>
     </owl:Class>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Tea -->
 
-    <owl:Class rdf:about="&tea;Tea">
-        <rdfs:label xml:lang="en">tea</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;CaffeinatedSteepedDrink"/>
-        <skos:altLabel>茶</skos:altLabel>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Tea">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/CaffeinatedSteepedDrink"/>
         <dct:source>Tea: The Drink that Changed the World</dct:source>
+        <rdfs:label xml:lang="en">tea</rdfs:label>
+        <skos:altLabel>茶</skos:altLabel>
         <skos:definition>A steeped drink made from the leaves of the Camellia sinensis plant</skos:definition>
     </owl:Class>
     
@@ -1634,11 +1655,11 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ThymeFlavor -->
 
-    <owl:Class rdf:about="&tea;ThymeFlavor">
-        <rdfs:label xml:lang="en">thyme flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;ASTASpiceFlavor"/>
-        <rdfs:subClassOf rdf:resource="&tea;HerbalFlavor"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ThymeFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ASTASpiceFlavor"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/HerbalFlavor"/>
         <dct:source>ASTA spice list (http://www.astaspice.org/download/9423/)</dct:source>
+        <rdfs:label xml:lang="en">thyme flavor</rdfs:label>
         <skos:definition>a flavor listed in the ASTA list that is reminiscent of thyme, the leaves of the plant Thymus vulgaris</skos:definition>
     </owl:Class>
     
@@ -1646,19 +1667,20 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Tisane -->
 
-    <owl:Class rdf:about="&tea;Tisane">
-        <rdfs:label xml:lang="en">tisane</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;SteepedDrink"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Tisane">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SteepedDrink"/>
         <dct:source>Tea: The Drink that Changed the World</dct:source>
-        <skos:definition>A steeped drink made from plants other than Camellia sinensis</skos:definition>
+        <rdfs:label xml:lang="en">tisane</rdfs:label>
         <skos:altLabel xml:lang="en">herbal tea</skos:altLabel>
+        <skos:definition>A steeped drink made from plants other than Camellia sinensis</skos:definition>
     </owl:Class>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ValuePartition -->
 
-    <owl:Class rdf:about="&tea;ValuePartition">
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ValuePartition">
+        <dct:source xml:lang="en">ISO 11179</dct:source>
         <rdfs:label xml:lang="en">value partition</rdfs:label>
     </owl:Class>
     
@@ -1666,22 +1688,22 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/VanillaFlavor -->
 
-    <owl:Class rdf:about="&tea;VanillaFlavor">
-        <rdfs:label xml:lang="en">vanilla flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;ASTASpiceFlavor"/>
-        <rdfs:subClassOf rdf:resource="&tea;SweetFlavor"/>
-        <skos:definition>a flavor listed in the ASTA list that is reminiscent of vanilla, the seed pods of flowering vines in the genus Vanilla, typically Vanilla planifolia</skos:definition>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/VanillaFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ASTASpiceFlavor"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SweetFlavor"/>
         <dct:source>ASTA spice list (http://www.astaspice.org/download/9423/)</dct:source>
+        <rdfs:label xml:lang="en">vanilla flavor</rdfs:label>
+        <skos:definition>a flavor listed in the ASTA list that is reminiscent of vanilla, the seed pods of flowering vines in the genus Vanilla, typically Vanilla planifolia</skos:definition>
     </owl:Class>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/VegetalFlavor -->
 
-    <owl:Class rdf:about="&tea;VegetalFlavor">
-        <rdfs:label xml:lang="en">vegetal flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;Flavor"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/VegetalFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Flavor"/>
         <dct:source>Adapted from Tea Cupping Standards (http://www.worldoftea.org/tea-cupping-standards/), Stone Leaf Tea&apos;s Tea Guru (http://www.stoneleaftea.com/tea-guru/), and The Australian Tea Maters&apos; Tea Flavour Wheel (https://australianteamasters.wordpress.com/2014/04/30/the-tea-flavour-wheel/)</dct:source>
+        <rdfs:label xml:lang="en">vegetal flavor</rdfs:label>
         <skos:definition xml:lang="en">a flavor that is leafy, grassy, or evocative of a vegetable</skos:definition>
     </owl:Class>
     
@@ -1689,23 +1711,23 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/WhitePepperFlavor -->
 
-    <owl:Class rdf:about="&tea;WhitePepperFlavor">
-        <rdfs:label xml:lang="en">white pepper flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;ASTASpiceFlavor"/>
-        <rdfs:subClassOf rdf:resource="&tea;SpicyFlavor"/>
-        <skos:definition>a flavor listed in the ASTA list that is reminiscent of white pepper, the seeds of the plant Piper nigrum that has had the skin of the fruit removed</skos:definition>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/WhitePepperFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ASTASpiceFlavor"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/SpicyFlavor"/>
         <dct:source>ASTA spice list (http://www.astaspice.org/download/9423/)</dct:source>
+        <rdfs:label xml:lang="en">white pepper flavor</rdfs:label>
+        <skos:definition>a flavor listed in the ASTA list that is reminiscent of white pepper, the seeds of the plant Piper nigrum that has had the skin of the fruit removed</skos:definition>
     </owl:Class>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/WhiteTea -->
 
-    <owl:Class rdf:about="&tea;WhiteTea">
-        <rdfs:label xml:lang="en">white tea</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;Tea"/>
-        <skos:altLabel>白茶</skos:altLabel>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/WhiteTea">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Tea"/>
         <dct:source>Tea: The Drink that Changed the World</dct:source>
+        <rdfs:label xml:lang="en">white tea</rdfs:label>
+        <skos:altLabel>白茶</skos:altLabel>
         <skos:definition>Tea that has been dried, but not withered, rolled, or oxidized</skos:definition>
     </owl:Class>
     
@@ -1713,10 +1735,10 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/WoodyFlavor -->
 
-    <owl:Class rdf:about="&tea;WoodyFlavor">
-        <rdfs:label xml:lang="en">woody flavor</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;Flavor"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/WoodyFlavor">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Flavor"/>
         <dct:source>Adapted from Tea Cupping Standards (http://www.worldoftea.org/tea-cupping-standards/), Stone Leaf Tea&apos;s Tea Guru (http://www.stoneleaftea.com/tea-guru/), and The Australian Tea Maters&apos; Tea Flavour Wheel (https://australianteamasters.wordpress.com/2014/04/30/the-tea-flavour-wheel/)</dct:source>
+        <rdfs:label xml:lang="en">woody flavor</rdfs:label>
         <skos:definition xml:lang="en">a flavor that is evocative of wood or trees</skos:definition>
     </owl:Class>
     
@@ -1724,45 +1746,118 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/YerbaMate -->
 
-    <owl:Class rdf:about="&tea;YerbaMate">
-        <rdfs:label xml:lang="en">yerba mate</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;CaffeinatedSteepedDrink"/>
-        <rdfs:subClassOf rdf:resource="&tea;Tisane"/>
-        <skos:definition>A steeped drink made from the leaves of Ilex paraguariensis, grown in South America. Contains caffeine.</skos:definition>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/YerbaMate">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/CaffeinatedSteepedDrink"/>
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Tisane"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/hasBrewingTemperature"/>
+                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/HighBrewingTemperature"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <dct:source>Tea: The Drink that Changed the World</dct:source>
+        <rdfs:label xml:lang="en">yerba mate</rdfs:label>
+        <skos:definition>A steeped drink made from the leaves of Ilex paraguariensis, grown in South America. Contains caffeine.</skos:definition>
     </owl:Class>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/YoungRawPu-ErhTea -->
 
-    <owl:Class rdf:about="&tea;YoungRawPu-ErhTea">
-        <rdfs:label xml:lang="en">young raw pu-erh tea</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&tea;Pu-ErhTea"/>
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/YoungRawPu-ErhTea">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/Pu-ErhTea"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&tea;hasBrewingTemperature"/>
-                <owl:someValuesFrom rdf:resource="&tea;MediumBrewingTemperature"/>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/hasBrewingTemperature"/>
+                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/MediumBrewingTemperature"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <skos:definition>A pu-erh tea that is less than three years old</skos:definition>
         <dct:source>http://www.seriouseats.com/2015/08/what-is-puerh-tea-where-to-buy.html</dct:source>
+        <rdfs:label xml:lang="en">young raw pu-erh tea</rdfs:label>
+        <skos:definition>A pu-erh tea that is less than three years old</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/assamTea -->
+
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/assamTea">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/BlackTea"/>
+        <dct:source xml:lang="en">the kitchn blog (http://www.thekitchn.com/what-you-should-know-about-black-tea-tea-essentials-201046)</dct:source>
+        <rdfs:label xml:lang="en">assam tea</rdfs:label>
+        <skos:definition xml:lang="en">A black tea produced in the Assam region of north-east India</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ceylonTea -->
+
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/ceylonTea">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/BlackTea"/>
+        <dct:source xml:lang="en">the kitchn blog (http://www.thekitchn.com/what-you-should-know-about-black-tea-tea-essentials-201046)</dct:source>
+        <rdfs:label xml:lang="en">ceylon tea</rdfs:label>
+        <skos:definition xml:lang="en">A black tea produced in Sri Lanka (formerly known as Ceylon)</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/darjeelingTea -->
+
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/darjeelingTea">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/BlackTea"/>
+        <dct:source xml:lang="en">RateTea (http://ratetea.com/style/darjeeling-black-tea/23/)</dct:source>
+        <rdfs:label xml:lang="en">darjeeling tea</rdfs:label>
+        <skos:definition xml:lang="en">A black tea produced in the mountains of the Darjeeling district of north-east India</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/keemunTea -->
+
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/keemunTea">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/BlackTea"/>
+        <dct:source xml:lang="en">RateTea (http://ratetea.com/style/keemun/30/)</dct:source>
+        <rdfs:label xml:lang="en">keemun tea</rdfs:label>
+        <skos:definition xml:lang="en">A black tea primarily produced in the Anhui province of China, but sometimes Hubei or Fujian, or in Taiwan</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/nilgiriTea -->
+
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/nilgiriTea">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/BlackTea"/>
+        <dct:description xml:lang="en">A black tea produced in the Nilgiri district in southern India</dct:description>
+        <dct:source xml:lang="en">the kitchn blog (http://www.thekitchn.com/what-you-should-know-about-black-tea-tea-essentials-201046)</dct:source>
+        <rdfs:label xml:lang="en">nilgiri tea</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/yunnanTea -->
+
+    <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/yunnanTea">
+        <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/BlackTea"/>
+        <dct:source xml:lang="en">RateTea (http://ratetea.com/style/yunnan-red/87/)</dct:source>
+        <rdfs:label xml:lang="en">yunnan tea</rdfs:label>
+        <skos:altLabel>滇红</skos:altLabel>
+        <skos:definition xml:lang="en">A black tea produced in the Yunnan province of China</skos:definition>
     </owl:Class>
     
 
 
     <!-- http://www.nanopub.org/nschema#Assertion -->
 
-    <owl:Class rdf:about="&np;Assertion">
+    <owl:Class rdf:about="http://www.nanopub.org/nschema#Assertion">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/03/trix/rdfg-1/Graph"/>
         <rdfs:label xml:lang="en">Assertion</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&rdfg-1;Graph"/>
     </owl:Class>
     
 
 
     <!-- http://www.nanopub.org/nschema#Nanopublication -->
 
-    <owl:Class rdf:about="&np;Nanopublication">
+    <owl:Class rdf:about="http://www.nanopub.org/nschema#Nanopublication">
         <rdfs:label xml:lang="en">Nanopublication</rdfs:label>
     </owl:Class>
     
@@ -1770,10 +1865,10 @@
 
     <!-- http://www.w3.org/2004/03/trix/rdfg-1/Graph -->
 
-    <owl:Class rdf:about="&rdfg-1;Graph"/>
+    <owl:Class rdf:about="http://www.w3.org/2004/03/trix/rdfg-1/Graph"/>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 4.2.1.20160306-0033) https://github.com/owlcs/owlapi -->
 
