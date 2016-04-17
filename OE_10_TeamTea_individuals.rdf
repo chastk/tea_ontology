@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!DOCTYPE rdf:RDF [
@@ -29,7 +28,18 @@
      xmlns:tea-ind="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_10_TeaTeam_Individuals/">
 
     <owl:Ontology rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_10_TeaTeam_Individuals/">
+		<rdfs:label>Tea Ontology</rdfs:label>
+        <dct:creator xml:lang="en">Cara Reedy</dct:creator>
+        <dct:creator xml:lang="en">Katie Chastain</dct:creator>
+		<dct:publisher xml:lang="en">Tea Team</dct:publisher>
+		<dct:modified>04/17/2016</dct:modified>
+		<dct:abstract xml:lang="en">The goal of this ontolgoy is to deliver a reasonable list of recommended tea blends, given a list of teas a user has or might purchase, based on characteristics of those listed teas.</dct:abstract>
+		<owl:priorVersion rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam_Individuals/"/>
+		<owl:versionIRI>
+		http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_10_TeaTeam_Individuals//v1
 
+		</owl:versionIRI>
+		<skos:changeNote>Added flavors, adjusted individuals</skos:changeNote>
         <owl:imports rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_10_TeaTeam/"/>
     </owl:Ontology>
 

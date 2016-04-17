@@ -1,0 +1,30 @@
+ASK {
+    t1 tea:hasFlavor ?flavorA ;
+        tea:hasBrewingTemperature ?temp .
+    t2 tea:hasFlavor ?flavorB ;
+        tea:hasBrewingTemperature ?temp .
+    ?flavorA tea:isCompatibleWith ?flavorB .
+}
+
+ASK{
+    ?blend contains t1 ;
+        contains t2 ;
+        a DecaffeinatedBlend .
+}
+
+SELECT DISTINCT ?tealabel where {
+    tea:snowBudWhiteTea tea:hasFlavor ?flavorA .
+        tea:roseHipTea tea:hasBrewingTemperature ?temp .
+        ?othertea tea:hasFlavor ?flavorA ;
+                  tea:hasBrewingTemperature ?temp .
+        ?othertea rdfs:label ?tealabel .
+    }
+
+SELECT DISTINCT ?tealabel where {
+    myNewTea tea:brewsAt ?temp ;
+        tea:hasFlavor tea:flavorA .
+    ?othertea tea:hasBrewingTemperature ?temp ;
+              tea:hasFlavor ?flavorB.
+    ?userflavor tea:isCompatibleWith ?flavorB .
+    ?othertea rdfs: label ?tealabel .
+}
