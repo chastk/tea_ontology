@@ -1,8 +1,10 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 
 <!DOCTYPE rdf:RDF [
     <!ENTITY dct "http://purl.org/dc/terms/" >
+	<!ENTITY dwc "http://rs.tdwg.org/dwc/terms/" >
+	<!ENTITY pdo "http://www.stkos-ontology/domain/plantbiodiversity#" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY np "http://www.nanopub.org/nschema#" >
     <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
@@ -11,36 +13,36 @@
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdfg-1 "http://www.w3.org/2004/03/trix/rdfg-1/" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-    <!ENTITY pdo "http://www.stkos-ontology/domain/plantbiodiversity#" >
-    <!ENTITY tea "http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_10_TeaTeam/" >
+    <!ENTITY tea "http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_11_TeaTeam/" >
 ]>
 
 
-<rdf:RDF xmlns="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_11_TeaTeam/"
+<rdf:RDF 
      xml:base="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_11_TeaTeam/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
+	 xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
      xmlns:rdfg-1="http://www.w3.org/2004/03/trix/rdfg-1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:np="http://www.nanopub.org/nschema#"
      xmlns:dct="http://purl.org/dc/terms/"
+	 xmlns:pdo="http://www.stkos-ontology/domain/plantbiodiversity#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:tea="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_10_TeaTeam/"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:pdo="http://www.stkos-ontology/domain/plantbiodiversity#">
+     xmlns:tea="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_11_TeaTeam/"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
     <owl:Ontology rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_11_TeaTeam/">
         <rdfs:label>Tea Ontology</rdfs:label>
         <dct:modified>04/17/2016</dct:modified>
         <skos:changeNote>Added flavors, adjusted individuals</skos:changeNote>
         <owl:versionIRI>
-		http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_10_TeaTeam/v1
+		http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_11_TeaTeam/v1
 
 		</owl:versionIRI>
         <dct:creator xml:lang="en">Cara Reedy</dct:creator>
         <dct:creator xml:lang="en">Katie Chastain</dct:creator>
         <dct:publisher xml:lang="en">Tea Team</dct:publisher>
-        <dct:abstract xml:lang="en">The goal of this ontolgoy is to deliver a reasonable list of recommended tea blends, given a list of teas a user has or might purchase, based on characteristics of those listed teas.</dct:abstract>
+        <dct:abstract xml:lang="en">The goal of this ontology is to deliver a reasonable list of recommended tea blends, given a list of teas a user has or might purchase, based on characteristics of those listed teas.</dct:abstract>
         <owl:priorVersion rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/"/>
         <owl:imports rdf:resource="http://www.nanopub.org/nschema#"/>
         <owl:imports rdf:resource="http://www.stkos-ontology/domain/plantbiodiversity#"/>
@@ -213,6 +215,7 @@
      -->
 
     
+
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_11_TeaTeam/brews -->
@@ -416,8 +419,15 @@
         <skos:definition>the aril of a plant, a growth that partially or fully covers a seed and may look like a fruit itself</skos:definition>
         <dct:source>Adapted from Merriam-Webster online dictionary</dct:source>
     </owl:Class>
-    
-
+	
+	
+    <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_11_TeaTeam/Aspalathus -->
+	<owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_11_TeaTeam/Aspalathus">
+		<rdfs:label xml:lang="en">Aspalthus</rdfs:label>
+		<pdo:belong_to_family rdf:resource="&pdo;Fabaceae"/>
+		<rdf:type rdf:resource="&dwc;Genus"/>
+		<pdo:has_species rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_11_TeaTeam/Aspalathus_linearis"/>
+	</owl:Class>
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_11_TeaTeam/Aspalathus_linearis -->
 
@@ -1174,7 +1184,7 @@
 
     <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_11_TeaTeam/Ilex_guayusa">
         <rdfs:label xml:lang="en">Ilex guayusa</rdfs:label>
-		<owl:subClassOf rdf:resource="&pdo;Ilex"/>
+		<pdo:belong_to_genus rdf:resource="&pdo;Ilex"/>
         <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_11_TeaTeam/Plant"/>
         <skos:definition xml:lang="en">a plant from the Aquifoliaceae family; guayusa is made from its leaves</skos:definition>
     </owl:Class>
@@ -1185,7 +1195,7 @@
 
     <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_11_TeaTeam/Ilex_paraguariensis">
         <rdfs:label xml:lang="en">Ilex paraguariensis</rdfs:label>
-		<owl:subClassOf rdf:resource="&pdo;Ilex"/>
+		<pdo:belong_to_genus rdf:resource="&pdo;Ilex"/>
         <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_11_TeaTeam/Plant"/>
         <skos:definition xml:lang="en">a plant of the Aquifoliaceae family; yerba mate is made from the leaves of this plant</skos:definition>
     </owl:Class>
