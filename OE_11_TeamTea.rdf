@@ -220,20 +220,22 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_11_TeaTeam/brews -->
 
-    <owl:ObjectProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_11_TeaTeam/brews">
+    <owl:ObjectProperty rdf:about="&tea;brews">
         <rdfs:label>brews</rdfs:label>
-        <skos:definition>the steepedDrinks a particular brewing temperature range can steep</skos:definition>
-        <rdfs:domain rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_11_TeaTeam/BrewingTemperature"/>
-        <owl:inverseOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_11_TeaTeam/hasBrewingTemperature"/>
+        <skos:definition rdf:datatype="&xsd;string" xml:lang="en">identifies the steeped drinks a particular brewing temperature range is appropriate for</skos:definition>
+        <rdfs:domain rdf:resource="&tea;BrewingTemperature"/>
+        <rdfs:range rdf:resource="&tea;SteepedDrink"/>
     </owl:ObjectProperty>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_11_TeaTeam/brewsAt -->
 
-    <owl:ObjectProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_11_TeaTeam/brewsAt">
+    <owl:ObjectProperty rdf:about="&tea;brewsAt">
         <rdfs:label>brews at</rdfs:label>
-        <skos:definition xml:lang="en">Relates a Plant Part to its appropriate Brewing Temperature(s)</skos:definition>
+        <skos:definition rdf:datatype="&xsd;string" xml:lang="en">relates a part of a particular plant to its appropriate brewing temperature(s)</skos:definition>
+        <rdfs:domain rdf:resource="&tea;PlantPart"/>
+        <rdfs:range rdf:resource="&tea;BrewingTemperature"/>
     </owl:ObjectProperty>
     
 
@@ -259,14 +261,15 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_11_TeaTeam/hasBrewingTemperature -->
 
-    <owl:ObjectProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_11_TeaTeam/hasBrewingTemperature">
+    <owl:ObjectProperty rdf:about="&tea;hasBrewingTemperature">
         <rdfs:label>has brewing temperature</rdfs:label>
-        <skos:definition>the brewing temperature range used for a particular steepedDrink</skos:definition>
-        <rdfs:range rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_11_TeaTeam/BrewingTemperature"/>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_11_TeaTeam/madeFromPart"/>
-            <rdf:Description rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_11_TeaTeam/brewsAt"/>
-        </owl:propertyChainAxiom>
+        <skos:definition rdf:datatype="&xsd;string" xml:lang="en">specifies the brewing temperature range for a particular steeped drink</skos:definition>
+        <rdfs:subPropertyOf>
+            <owl:propertyChainAxiom rdf:parseType="Collection">
+                <rdf:Description rdf:about="&tea;madeFromPart"/>
+                <rdf:Description rdf:about="&tea;brewsAt"/>
+            </owl:propertyChainAxiom>
+        </rdfs:subPropertyOf>
     </owl:ObjectProperty>
     
 
@@ -302,19 +305,22 @@
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_11_TeaTeam/madeFromPart -->
 
-    <owl:ObjectProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_11_TeaTeam/madeFromPart">
+    <owl:ObjectProperty rdf:about="&tea;madeFromPart">
         <rdfs:label>made from part</rdfs:label>
-        <skos:definition>defines what kind of plant part a tisane is made from</skos:definition>
-        <rdfs:range rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_11_TeaTeam/PlantPart"/>
+        <skos:definition rdf:datatype="&xsd;string" xml:lang="en">specifies the part of a given plant from which a steeped drink is made</skos:definition>
+        <rdfs:domain rdf:resource="&tea;SteepedDrink"/>
+        <rdfs:range rdf:resource="&tea;PlantPart"/>
     </owl:ObjectProperty>
     
 
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_11_TeaTeam/madeFromPlant -->
 
-    <owl:ObjectProperty rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_11_TeaTeam/madeFromPlant">
+    <owl:ObjectProperty rdf:about="&tea;madeFromPlant">
         <rdfs:label xml:lang="en">made from plant</rdfs:label>
-        <skos:definition xml:lang="en">the plant from which a Steeped Drink is made. tea:madeFromPart describes the specific part of the plant.</skos:definition>
+        <skos:definition rdf:datatype="&xsd;string" xml:lang="en">specifies the plant from which a steeped drink is made</skos:definition>
+        <rdfs:domain rdf:resource="&tea;SteepedDrink"/>
+        <rdfs:range rdf:resource="&tea;Plant"/>
     </owl:ObjectProperty>
     
 
@@ -422,12 +428,24 @@
 	
 	
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_11_TeaTeam/Aspalathus -->
-	<owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_11_TeaTeam/Aspalathus">
-		<rdfs:label xml:lang="en">Aspalthus</rdfs:label>
-		<pdo:belong_to_family rdf:resource="&pdo;Fabaceae"/>
-		<rdf:type rdf:resource="&dwc;Genus"/>
-		<pdo:has_species rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_11_TeaTeam/Aspalathus_linearis"/>
-	</owl:Class>
+	<owl:Class rdf:about="&tea;Aspalathus">
+        <rdfs:label xml:lang="en">aspalathus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&dwc;Genus"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+               <owl:onProperty rdf:resource="&pdo;has_species"/>
+               <owl:allValuesFrom rdf:resource="&tea;Aspalathus_linearis"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&pdo;belong_to_family"/>
+                <owl:hasValue rdf:resource="&pdo;Fabaceae"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:definition rdf:datatype="&xsd;string" xml:lang="en">a genus of flowering plants in the legume family, Fabaceae, that has species including aspalathus linearis</skos:definition>
+        <dct:source rdf:resource="https://en.wikipedia.org/wiki/Aspalathus"/>
+    </owl:Class>
 
     <!-- http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_11_TeaTeam/Aspalathus_linearis -->
 
