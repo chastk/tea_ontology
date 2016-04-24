@@ -32,18 +32,21 @@
      xmlns:tea="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_11_TeaTeam/"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#">
     <owl:Ontology rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_11_TeaTeam/">
-        <owl:versionIRI rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_11_TeaTeam/v1/"/>
-        <owl:imports rdf:resource="http://www.nanopub.org/nschema#"/>
-        <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
-		<owl:imports rdf:resource="http://www.stkos-ontology/domain/plantbiodiversity#"/>
-        <dct:modified>04-24-2016</dct:modified>
         <rdfs:label>Tea Ontology</rdfs:label>
-        <dct:abstract xml:lang="en">The goal of this ontology is to deliver a reasonable list of recommended tea blends, given a list of teas a user has or might purchase, based on characteristics of those listed teas.</dct:abstract>
+        <dct:modified>04/17/2016</dct:modified>
+        <skos:changeNote>Added flavors, adjusted individuals</skos:changeNote>
+        <owl:versionIRI>
+		http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_11_TeaTeam/v1
+
+		</owl:versionIRI>
         <dct:creator xml:lang="en">Cara Reedy</dct:creator>
-		<dct:creator xml:lang="en">Katie Chastain</dct:creator>
+        <dct:creator xml:lang="en">Katie Chastain</dct:creator>
         <dct:publisher xml:lang="en">Tea Team</dct:publisher>
-        <owl:priorVersion rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_10_TeaTeam/"/>
-        <skos:changeNote>Changed how blends worked, added more teas</skos:changeNote>
+        <dct:abstract xml:lang="en">The goal of this ontology is to deliver a reasonable list of recommended tea blends, given a list of teas a user has or might purchase, based on characteristics of those listed teas.</dct:abstract>
+        <owl:priorVersion rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_9_TeaTeam/"/>
+        <owl:imports rdf:resource="http://www.nanopub.org/nschema#"/>
+        <owl:imports rdf:resource="http://www.stkos-ontology/domain/plantbiodiversity#"/>
+        <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
     </owl:Ontology>
     
 
@@ -672,6 +675,8 @@
     <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_11_TeaTeam/Caffeinated">
         <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_11_TeaTeam/Caffeination"/>
         <owl:disjointWith rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_11_TeaTeam/Decaffeinated"/>
+        <dct:source xml:lang="en">Merriam-Webster dictionary</dct:source>
+        <rdfs:label xml:lang="en">&apos;caffeinated&apos;</rdfs:label>
         <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Containing caffeine</skos:definition>
     </owl:Class>
     
@@ -711,6 +716,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_11_TeaTeam/ValuePartition"/>
+        <dct:source xml:lang="en">TeaTeam</dct:source>
         <rdfs:label xml:lang="en">caffeination</rdfs:label>
         <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Whether a brew has caffeine in it or not</skos:definition>
     </owl:Class>
@@ -911,6 +917,8 @@
 
     <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_11_TeaTeam/Decaffeinated">
         <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_11_TeaTeam/Caffeination"/>
+        <dct:source xml:lang="en">Merriam-Webster dictionary</dct:source>
+        <rdfs:label xml:lang="en">&apos;decaffienated&apos;</rdfs:label>
         <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not containing caffeine</skos:definition>
     </owl:Class>
     
