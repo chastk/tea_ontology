@@ -32,12 +32,12 @@
     <owl:Ontology rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam/">
         <rdfs:label>Tea Ontology</rdfs:label>
         <skos:changeNote>Added flavors, adjusted individuals</skos:changeNote>
-        <dct:modified>04-17-2016</dct:modified>
+        <dct:modified>04-29-2016</dct:modified>
         <dct:creator xml:lang="en">Cara Reedy</dct:creator>
         <dct:creator xml:lang="en">Katie Chastain</dct:creator>
         <dct:publisher xml:lang="en">Tea Team</dct:publisher>
         <dct:abstract xml:lang="en">The goal of this ontolgoy is to deliver a reasonable list of recommended tea blends, given a list of teas a user has or might purchase, based on characteristics of those listed teas.</dct:abstract>
-        <owl:priorVersion rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_10_TeaTeam/"/>
+        <owl:priorVersion rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_11_TeaTeam/"/>
         <owl:versionIRI rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam/v1/"/>
         <owl:imports rdf:resource="http://www.nanopub.org/nschema#"/>
         <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
@@ -427,13 +427,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam/brewsAt"/>
-                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam/HighBrewingTemperature"/>
+                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam/MediumBrewingTemperature"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam/brewsAt"/>
-                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam/MediumBrewingTemperature"/>
+                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam/HighBrewingTemperature"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <skos:definition rdf:datatype="&xsd;string">the aril of a plant, a growth that partially or fully covers a seed and may look like a fruit itself</skos:definition>
@@ -513,13 +513,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam/hasFlavor"/>
-                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam/FloralFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam/FruityFlavor"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam/hasFlavor"/>
-                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam/FruityFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam/FloralFlavor"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <dct:source xml:lang="en">Fragrantica (http://www.fragrantica.com/notes/Bergamot-75.html)</dct:source>
@@ -616,14 +616,14 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam/contains"/>
-                <owl:onClass rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam/Flavoring"/>
-                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam/SteepedDrink"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam/contains"/>
-                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam/SteepedDrink"/>
+                <owl:onClass rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam/Flavoring"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <skos:definition rdf:datatype="&xsd;string">the combination of at least 2 steepedDrinks or a steepedDrink and at least 1 flavoring</skos:definition>
@@ -1028,13 +1028,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam/contains"/>
-                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam/Tea"/>
+                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam/BergamotEssentialOil"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam/contains"/>
-                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam/BergamotEssentialOil"/>
+                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam/Tea"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <skos:definition rdf:datatype="&xsd;string">a blended tea consisting of some tea base (traditionally black) and oil of bergamot</skos:definition>
@@ -1260,6 +1260,12 @@
 
     <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam/Guayusa">
         <rdfs:label xml:lang="en">guayusa</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam/madeFromPlant"/>
+                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam/Ilex_guayusa"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam/CaffeinatedSteepedDrink"/>
         <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam/Tisane"/>
         <skos:definition rdf:datatype="&xsd;string">A steeped drink made from the leaves of Ilex guayusa, grown in South America. Contains caffeine.</skos:definition>
@@ -1422,13 +1428,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam/brewsAt"/>
-                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam/HighBrewingTemperature"/>
+                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam/MediumBrewingTemperature"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam/brewsAt"/>
-                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam/MediumBrewingTemperature"/>
+                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam/HighBrewingTemperature"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <skos:definition rdf:datatype="&xsd;string">the structure used by a plant to perform photosynthesis</skos:definition>
@@ -1926,6 +1932,12 @@
 
     <owl:Class rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam/Tea">
         <rdfs:label xml:lang="en">tea</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam/madeFromPlant"/>
+                <owl:someValuesFrom rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam/Camellia_sinensis"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam/CaffeinatedSteepedDrink"/>
         <skos:definition rdf:datatype="&xsd;string">A steeped drink made from the leaves of the Camellia sinensis plant</skos:definition>
         <skos:altLabel>茶</skos:altLabel>
