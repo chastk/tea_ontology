@@ -27,7 +27,9 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:tea="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam/"
+	 xmlns:sm="http://www.omg.org/techprocess/ab/SpecificationMetadata/"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+	 
     <owl:Ontology rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam/">
         <rdfs:label>Tea Ontology</rdfs:label>
         <skos:changeNote>Added flavors, adjusted individuals</skos:changeNote>
@@ -35,9 +37,11 @@
         <dct:creator xml:lang="en">Cara Reedy</dct:creator>
         <dct:creator xml:lang="en">Katie Chastain</dct:creator>
         <dct:publisher xml:lang="en">Tea Team</dct:publisher>
-        <dct:abstract xml:lang="en">The goal of this ontolgoy is to deliver a reasonable list of recommended tea blends, given a list of teas a user has or might purchase, based on characteristics of those listed teas.</dct:abstract>
+        <dct:abstract xml:lang="en">The goal of this ontolgoy is to deliver a reasonable list of recommended tea blends, given a list of teas a user has or might purchase, based on characteristics of those listed teas.  For more information including maintenance policies, see: https://tw.rpi.edu/web/Courses/Ontologies/2016/projects/tea</dct:abstract>
         <owl:priorVersion rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_11_TeaTeam/"/>
         <owl:versionIRI rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam/v1/"/>
+		<dct:rights rdf:datatype="&xsd;string">Copyright (c) 2016 Cara Reedy and Katie Chastain</dct:rights>
+		<dct:license rdf:datatype="&xsd;string">"http://opensource.org/licenses/mit-license.php/"</dct:license>
         <owl:imports rdf:resource="http://www.nanopub.org/nschema#"/>
         <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
     </owl:Ontology>

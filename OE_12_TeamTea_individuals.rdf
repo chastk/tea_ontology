@@ -37,9 +37,11 @@
         <dct:creator xml:lang="en">Cara Reedy</dct:creator>
         <dct:creator xml:lang="en">Katie Chastain</dct:creator>
         <dct:publisher xml:lang="en">Tea Team</dct:publisher>
-        <dct:abstract xml:lang="en">The goal of this ontolgoy is to deliver a reasonable list of recommended tea blends, given a list of teas a user has or might purchase, based on characteristics of those listed teas.</dct:abstract>
+        <dct:abstract xml:lang="en">The goal of this ontolgoy is to deliver a reasonable list of recommended tea blends, given a list of teas a user has or might purchase, based on characteristics of those listed teas. For more information including maintenance policies, see: https://tw.rpi.edu/web/Courses/Ontologies/2016/projects/tea</dct:abstract>
         <owl:priorVersion rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_11_TeaTeam_Individuals/"/>
         <owl:versionIRI rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam_Individuals/v1/"/>
+		<dct:rights rdf:datatype="&xsd;string">Copyright (c) 2016 Cara Reedy and Katie Chastain</dct:rights>
+		<dct:license rdf:datatype="&xsd;string">"http://opensource.org/licenses/mit-license.php/"</dct:license>
         <owl:imports rdf:resource="http://www.nanopub.org/nschema#"/>
         <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
 		<owl:imports rdf:resource="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam/"/>
