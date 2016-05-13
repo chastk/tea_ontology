@@ -15,9 +15,8 @@
 	<!ENTITY tea-ind "http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam_Individuals/" >
 ]>
 
-
-<rdf:RDF xmlns="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam_Individuals//"
-     xml:base="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam_Individuals//"
+<rdf:RDF 
+     xml:base="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam_Individuals/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:rdfg-1="http://www.w3.org/2004/03/trix/rdfg-1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -30,8 +29,9 @@
      xmlns:tea="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam/"
 	 xmlns:tea-ind="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam_Individuals/"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#">
-    <owl:Ontology rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam/">
-        <rdfs:label>Tea Ontology</rdfs:label>
+
+    <owl:Ontology rdf:about="http://tw.rpi.edu/web/Courses/Ontologies/2016/OE_12_TeaTeam_Individuals/">
+        <rdfs:label>Tea Ontology (Individuals)</rdfs:label>
         <skos:changeNote>Added flavors, adjusted individuals</skos:changeNote>
         <dct:modified>04-29-2016</dct:modified>
         <dct:creator xml:lang="en">Cara Reedy</dct:creator>
